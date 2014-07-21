@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<args>
+
+	<arg name="INITIAL_LOADING">Loading Task</arg>
+
+	<arg name="FAILED_LOADING">Failed to load task!</arg>
+
+	<arg name="BUILD_LOADING">Building Task</arg>
+
+	<arg name="IMAGE_LOADING">Loading Stimuli</arg>
+
+	<arg name="BEGIN_LABEL"><![CDATA[<font color="#FF0000"><b>&lt;&lt; Click here to begin &gt;&gt;</b></font>]]></arg>
+
+	<arg name="ERR"><![CDATA[<font color="#FF0000" size="48"><b>X</b></font>]]></arg>
+
+	<arg name="CORR"><![CDATA[<font color="#00FF00" size="48"><b>O</b></font>]]></arg>
+	<arg name="TIMEOUT"><![CDATA[<font color="#FF0000" size="30"><b>Please respond more quickly!</b></font>]]></arg>
+	<arg name="SEP">and</arg>
+
+	<arg name="INSTRUCTIONS"><![CDATA[<font size="14"><p>Hit <b>space bar</b> if the word/image pair belongs to both categories. Otherwise, <b>DO NOT</b> hit any key.</p><br /><p align="center">Press the <b>space bar</b> to begin.</p></font>]]></arg>
+
+	<arg name="END_WAIT">Please Wait</arg>
+
+	<arg name="END_CONT">Press spacebar to continue</arg>
+
+	<arg name="FAST_TXT">There were too many fast trials to determine a result.</arg>
+
+	<arg name="ERR_TXT">There were too many errors made to determine a result.</arg>
+
+	<arg name="SCORE_ERR">The result could not be determined.</arg>
+
+	<arg name="FONT">Arial</arg>
+
+	<arg name="FONTSIZE">20</arg>
+
+	<arg name="FONTCOLOR">FFFFFF</arg>
+
+	<arg name="CAT_PADDING">5</arg>
+
+	<arg name="INST_MARGIN">20</arg>
+
+	<arg name="INST_PADDING">20</arg>
+
+	<arg name="ERROR_PADDING">50</arg>
+
+	<arg name="HIT_KEY">32</arg>
+
+	<arg name="ERR_CORR">1</arg>
+
+	<arg name="ERR_FEED">1</arg>
+
+	<arg name="STIM_DELAY">250</arg>
+
+	<arg name="IMAGE_URL">/implicit/user/calvin/contestv2/images/</arg>
+
+	<arg name="POST_URL">/implicit/AS</arg>
+
+	<arg name="NEXT_URL">/implicit/Study</arg>
+
+	<arg name="SKIP">1</arg>
+
+	<arg name="DEBUG">@flashDebug@</arg>
+
+</args>
+

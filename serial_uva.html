@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+ 
+    <title>UVA Email Address</title>
+   
+<script language="javascript" type="text/javascript" src="/implicit/common/en-us/js/dynamicoptionlist.js"></script>
+<script language="javascript" type="text/javascript" src="/implicit/common/en-us/js/task.js"></script>
+<script type="text/javascript">
+function validate_email(field,alerttxt)
+{
+return true;  //can have code here to check that email format is correct
+}
+function validate_form()
+{
+ 
+  
+  if(document.FormOne.email.value==null || document.FormOne.email.value=="")
+  {
+   document.FormOne.email.focus();
+  alert("Please enter an email address");
+  return false;
+  }
+  if (validate_email(document.FormOne.email,"Not a valid email address!")==false)
+    {document.FormOne.email.focus();return false;}
+  
+    if(document.FormOne.email.value!=document.FormOne.email2.value)
+  {
+  document.FormOne.email2.focus();
+  alert("The email addresses do not match");
+  return false;
+  }
+  return true;
+}
+</script>
+</head>
+<body  >
+    <center>
+<br />
+<form method="post" name="FormOne" id="FormOne" action="/implicit/Study">
+<input type="hidden" name="mode" value="insQuesData" />
+<input type="hidden" name="questionnaireName" value="followup" />
+<input type="hidden" name="studyName" value="KateIC2" />
+<input type="hidden" name="taskNum" value="1" />
+<input type="hidden" name="redirect" value="/EndTask" />
+
+<input type="hidden" name="QuesName" value="agree" />
+<input type="hidden" name="QuesName" value="email" />
+     
+<table width="664" cellpadding="0" cellspacing="0" border="0">
+  
+  <tr>
+    <td>
+      <table border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td colspan="2"  align="left" >
+            <h1>UVA Email Address</h1>
+              <p class="text"><b>Please enter your UVA Email Address. Your UVA Email Address will only be used to track your responses across time. It will only be available to the research team, and will not be used for any other purpose than to track responses across time. Your responses CANNOT be linked to your identity.</b> </p></td>
+          </tr>
+          </table>
+        </td>
+      </tr>   
+       
+  
+          <table width="656" border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td  align="left" width="200"><span class="text">Enter your UVA Email Address.</td>
+            <td  align="left" width="450">&nbsp;&nbsp;&nbsp;          
+<input type="text" name="email" size="50">
+            </td>
+          </tr>
+         </table>
+       </td>
+     </tr>  
+       <td>
+          <table border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td align="left" width="200"><span class="text">Retype your UVA Email Address.</span></td>
+            <td align="left" width="450">&nbsp;&nbsp;&nbsp;  
+<input type="text" name="email2" size="50">
+            </td>
+          </tr>
+         </table>
+       </td>
+     </tr>  
+<tr><td align="center">
+<div style="visibility:hidden;">
+ <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("Continue");</script></h1>
+</div>
+<INPUT TYPE="button" NAME="fakecontinue" VALUE="Continue" onClick=" if(validate_form())document.FormOne.submit_system.click();"> 
+</td></tr>
+          
+        
+          
+   
+</center>
+</form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE IAT SYSTEM "https://implicit.harvard.edu/implicit/research/library/dtd/ImplicitIAT_001.dtd">
+
+<IAT results="false" gameScore="false">
+  <IATName>evalcond</IATName>
+  <Categories>
+    <Category>
+      <CategoryNumber>0</CategoryNumber>
+      <Stimuli>
+        <CategoryName>Black people</CategoryName>
+        <CategoryImgURL></CategoryImgURL>
+        <Stimulus type="image">bm14_nc.jpg</Stimulus>
+        <Stimulus type="image">bf23_nc.jpg</Stimulus>
+        <Stimulus type="image">bm56_nc.jpg</Stimulus>
+        <Stimulus type="image">bf14_nc.jpg</Stimulus>
+        <Stimulus type="image">bf56_nc.jpg</Stimulus>
+        <Stimulus type="image">bm23_nc.jpg</Stimulus>
+      </Stimuli>
+    </Category>
+    <Category color="33ff33">
+      <CategoryNumber>1</CategoryNumber>
+      <Stimuli>
+		<CategoryName> </CategoryName>
+        <Stimulus type="word">Joy</Stimulus>
+        <Stimulus type="word">Glorious</Stimulus>
+        <Stimulus type="word">Wonderful</Stimulus>
+        <Stimulus type="word">Love</Stimulus>
+        <Stimulus type="word">Happy</Stimulus>
+        <Stimulus type="word">Laughter</Stimulus>
+        <Stimulus type="word">Pleasure</Stimulus>
+        <Stimulus type="word">Peace</Stimulus>
+      </Stimuli>
+    </Category>
+    <Category>
+      <CategoryNumber>2</CategoryNumber>
+      <Stimuli>
+        <CategoryName>White people</CategoryName>
+        <CategoryImgURL></CategoryImgURL>
+        <Stimulus type="image">wf2_nc.jpg</Stimulus>
+        <Stimulus type="image">wm1_nc.jpg</Stimulus>
+        <Stimulus type="image">wf6_nc.jpg</Stimulus>
+        <Stimulus type="image">wf3_nc.jpg</Stimulus>
+        <Stimulus type="image">wm4_nc.jpg</Stimulus>
+        <Stimulus type="image">wm6_nc.jpg</Stimulus>
+      </Stimuli>
+    </Category>
+    <Category color="33ff33">
+      <CategoryNumber>3</CategoryNumber>
+      <Stimuli>
+		<CategoryName> </CategoryName>
+        <Stimulus type="word">Terrible</Stimulus>
+        <Stimulus type="word">Nasty</Stimulus>
+        <Stimulus type="word">Evil</Stimulus>
+        <Stimulus type="word">Hurt</Stimulus>
+        <Stimulus type="word">Horrible</Stimulus>
+        <Stimulus type="word">Failure</Stimulus>
+        <Stimulus type="word">Awful</Stimulus>
+        <Stimulus type="word">Agony</Stimulus>
+       </Stimuli>
+    </Category>      
+  </Categories>
+  <Block stimAlone="1000" StimulusDelay="475">
+    <Instructions><![CDATA[<font size="14"><p>Put your left index finger on <b>E</b> and your right index finger on <b>I</b>.  Sort each face to the side in which its category appears.  If you make an error, an <font color="#FF0000"><b>X</b></font> will appear until you hit the correct key.  </p><br/><p align="center">Press the <b>space bar</b> to begin.</p></font>]]></Instructions>
+    <BlockNumber>0</BlockNumber>
+    <TrialCount>40</TrialCount>
+    <BlockPairingDefinition>0,1,2,3</BlockPairingDefinition>
+    <Trials random="true">
+		<Trial count="1" pair="0" cat1="0" cat2="1" stim1="0" stim2="0"></Trial>
+		<Trial count="2" pair="0" cat1="0" cat2="1" stim1="1" stim2="1"></Trial>
+		<Trial count="3" pair="0" cat1="0" cat2="1" stim1="2" stim2="2"></Trial>
+		<Trial count="4" pair="0" cat1="0" cat2="1" stim1="3" stim2="3"></Trial>
+		<Trial count="5" pair="0" cat1="0" cat2="1" stim1="4" stim2="4"></Trial>
+		<Trial count="6" pair="0" cat1="0" cat2="1" stim1="5" stim2="5"></Trial>
+		<Trial count="7" pair="0" cat1="0" cat2="1" stim1="0" stim2="6"></Trial>
+		<Trial count="8" pair="0" cat1="0" cat2="1" stim1="2" stim2="7"></Trial>
+		<Trial count="9" pair="0" cat1="0" cat2="1" stim1="4" stim2="0"></Trial>
+		<Trial count="10" pair="0" cat1="0" cat2="1" stim1="1" stim2="1"></Trial>
+		<Trial count="11" pair="0" cat1="0" cat2="1" stim1="3" stim2="2"></Trial>
+		<Trial count="12" pair="0" cat1="0" cat2="1" stim1="5" stim2="3"></Trial>
+		<Trial count="13" pair="0" cat1="0" cat2="1" stim1="0" stim2="4"></Trial>
+		<Trial count="14" pair="0" cat1="0" cat2="1" stim1="3" stim2="5"></Trial>
+		<Trial count="15" pair="0" cat1="0" cat2="1" stim1="5" stim2="6"></Trial>
+		<Trial count="16" pair="0" cat1="0" cat2="1" stim1="1" stim2="7"></Trial>
+		<Trial count="17" pair="0" cat1="0" cat2="1" stim1="4" stim2="0"></Trial>
+		<Trial count="18" pair="0" cat1="0" cat2="1" stim1="2" stim2="1"></Trial>
+		<Trial count="19" pair="0" cat1="0" cat2="1" stim1="5" stim2="2"></Trial>
+		<Trial count="20" pair="0" cat1="0" cat2="1" stim1="4" stim2="3"></Trial>
+		<Trial count="21" pair="0" cat1="0" cat2="1" stim1="3" stim2="4"></Trial>
+		<Trial count="22" pair="0" cat1="0" cat2="1" stim1="2" stim2="5"></Trial>
+		<Trial count="23" pair="0" cat1="0" cat2="1" stim1="1" stim2="6"></Trial>
+		<Trial count="24" pair="0" cat1="0" cat2="1" stim1="0" stim2="7"></Trial>
+
+		<Trial count="1" pair="1" cat1="2" cat2="3" stim1="0" stim2="0"></Trial>
+		<Trial count="2" pair="1" cat1="2" cat2="3" stim1="1" stim2="1"></Trial>
+		<Trial count="3" pair="1" cat1="2" cat2="3" stim1="2" stim2="2"></Trial>
+		<Trial count="4" pair="1" cat1="2" cat2="3" stim1="3" stim2="3"></Trial>
+		<Trial count="5" pair="1" cat1="2" cat2="3" stim1="4" stim2="4"></Trial>
+		<Trial count="6" pair="1" cat1="2" cat2="3" stim1="5" stim2="5"></Trial>
+		<Trial count="7" pair="1" cat1="2" cat2="3" stim1="0" stim2="6"></Trial>
+		<Trial count="8" pair="1" cat1="2" cat2="3" stim1="2" stim2="7"></Trial>
+		<Trial count="9" pair="1" cat1="2" cat2="3" stim1="4" stim2="0"></Trial>
+		<Trial count="10" pair="1" cat1="2" cat2="3" stim1="1" stim2="1"></Trial>
+		<Trial count="11" pair="1" cat1="2" cat2="3" stim1="3" stim2="2"></Trial>
+		<Trial count="12" pair="1" cat1="2" cat2="3" stim1="5" stim2="3"></Trial>
+		<Trial count="13" pair="1" cat1="2" cat2="3" stim1="0" stim2="4"></Trial>
+		<Trial count="14" pair="1" cat1="2" cat2="3" stim1="3" stim2="5"></Trial>
+		<Trial count="15" pair="1" cat1="2" cat2="3" stim1="5" stim2="6"></Trial>
+		<Trial count="16" pair="1" cat1="2" cat2="3" stim1="1" stim2="7"></Trial>
+		<Trial count="17" pair="1" cat1="2" cat2="3" stim1="4" stim2="0"></Trial>
+		<Trial count="18" pair="1" cat1="2" cat2="3" stim1="2" stim2="1"></Trial>
+		<Trial count="19" pair="1" cat1="2" cat2="3" stim1="5" stim2="2"></Trial>
+		<Trial count="20" pair="1" cat1="2" cat2="3" stim1="4" stim2="3"></Trial>
+        <Trial count="21" pair="1" cat1="2" cat2="3" stim1="3" stim2="4"></Trial>
+        <Trial count="22" pair="1" cat1="2" cat2="3" stim1="2" stim2="5"></Trial>
+        <Trial count="23" pair="1" cat1="2" cat2="3" stim1="1" stim2="6"></Trial>
+        <Trial count="24" pair="1" cat1="2" cat2="3" stim1="0" stim2="7"></Trial>
+    </Trials>
+  </Block>
+</IAT>

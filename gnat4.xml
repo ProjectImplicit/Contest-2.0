@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE IAT SYSTEM "https://implicit.harvard.edu/implicit/research/library/dtd/ImplicitIAT_001.dtd">
+
+<IAT CorrScore="7" errScore="7" hideGameScore="true" results="false">
+  <IATName>gnatcontestb2</IATName>
+  <Categories>
+
+     <Category>
+      <CategoryNumber>0</CategoryNumber>
+      <Stimuli>
+        <CategoryName>Black</CategoryName>
+        <CategoryImgURL></CategoryImgURL>
+
+
+
+
+ 
+        <Stimulus type="image">b1good5.jpg</Stimulus>
+        <Stimulus type="image">b1good6.jpg</Stimulus>
+		<Stimulus type="image">b1good7.jpg</Stimulus>
+		<Stimulus type="image">b1good8.jpg</Stimulus>	
+
+
+
+
+
+        <Stimulus type="image">b2good5.jpg</Stimulus>
+        <Stimulus type="image">b2good6.jpg</Stimulus>
+		<Stimulus type="image">b2good7.jpg</Stimulus>
+        <Stimulus type="image">b2good8.jpg</Stimulus>		
+
+
+
+
+
+        <Stimulus type="image">b3good5.jpg</Stimulus>
+        <Stimulus type="image">b3good6.jpg</Stimulus>
+        <Stimulus type="image">b3good7.jpg</Stimulus>
+   	    <Stimulus type="image">b3good8.jpg</Stimulus>				
+
+	    <Stimulus type="image">b4good1.jpg</Stimulus>
+        <Stimulus type="image">b4good2.jpg</Stimulus>
+        <Stimulus type="image">b4good3.jpg</Stimulus>
+        <Stimulus type="image">b4good4.jpg</Stimulus>
+
+
+
+
+ 
+		<Stimulus type="image">b5good1.jpg</Stimulus>
+        <Stimulus type="image">b5good2.jpg</Stimulus>
+        <Stimulus type="image">b5good3.jpg</Stimulus>
+        <Stimulus type="image">b5good4.jpg</Stimulus>
+
+
+
+
+ 
+		<Stimulus type="image">b6good1.jpg</Stimulus>
+        <Stimulus type="image">b6good2.jpg</Stimulus>
+        <Stimulus type="image">b6good3.jpg</Stimulus>
+        <Stimulus type="image">b6good4.jpg</Stimulus>
+
+
+
+
+
+		
+      </Stimuli>
+    </Category>
+	 <Category>
+      <CategoryNumber>1</CategoryNumber>
+      <Stimuli>
+        <CategoryName>White Bad</CategoryName>
+        <CategoryImgURL></CategoryImgURL>
+
+
+
+
+ 
+        <Stimulus type="image">w1bad5.jpg</Stimulus>
+        <Stimulus type="image">w1bad6.jpg</Stimulus>
+	    <Stimulus type="image">w1bad7.jpg</Stimulus>
+        <Stimulus type="image">w1bad8.jpg</Stimulus>
+
+
+
+
+
+        <Stimulus type="image">w2bad5.jpg</Stimulus>
+        <Stimulus type="image">w2bad6.jpg</Stimulus>
+		<Stimulus type="image">w2bad7.jpg</Stimulus>
+        <Stimulus type="image">w2bad8.jpg</Stimulus>
+
+
+
+
+
+        <Stimulus type="image">w3bad5.jpg</Stimulus>
+        <Stimulus type="image">w3bad6.jpg</Stimulus>
+        <Stimulus type="image">w3bad7.jpg</Stimulus>
+        <Stimulus type="image">w3bad8.jpg</Stimulus>		
+ 
+		<Stimulus type="image">w4bad1.jpg</Stimulus>
+        <Stimulus type="image">w4bad2.jpg</Stimulus>
+        <Stimulus type="image">w4bad3.jpg</Stimulus>
+        <Stimulus type="image">w4bad4.jpg</Stimulus>
+
+
+
+
+ 
+	    <Stimulus type="image">w5bad1.jpg</Stimulus>
+        <Stimulus type="image">w5bad2.jpg</Stimulus>
+        <Stimulus type="image">w5bad3.jpg</Stimulus>
+        <Stimulus type="image">w5bad4.jpg</Stimulus>
+
+
+
+
+  
+		<Stimulus type="image">w6bad1.jpg</Stimulus>
+        <Stimulus type="image">w6bad2.jpg</Stimulus>
+        <Stimulus type="image">w6bad3.jpg</Stimulus>
+        <Stimulus type="image">w6bad4.jpg</Stimulus>
+
+
+
+
+  
+      </Stimuli>
+  </Category>
+    <Category>
+      <CategoryNumber>2</CategoryNumber>
+      <Stimuli>
+        <CategoryName>White Good</CategoryName>
+        <CategoryImgURL></CategoryImgURL>
+
+
+
+
+
+        <Stimulus type="image">w1good5.jpg</Stimulus>
+        <Stimulus type="image">w1good6.jpg</Stimulus>
+        <Stimulus type="image">w1good7.jpg</Stimulus>
+        <Stimulus type="image">w1good8.jpg</Stimulus>
+
+
+
+
+
+        <Stimulus type="image">w2good5.jpg</Stimulus>
+        <Stimulus type="image">w2good6.jpg</Stimulus>
+        <Stimulus type="image">w2good7.jpg</Stimulus>
+        <Stimulus type="image">w2good8.jpg</Stimulus>	
+
+
+
+
+
+        <Stimulus type="image">w3good5.jpg</Stimulus>
+        <Stimulus type="image">w3good6.jpg</Stimulus>
+        <Stimulus type="image">w3good7.jpg</Stimulus>
+        <Stimulus type="image">w3good8.jpg</Stimulus>	
+
+		<Stimulus type="image">w4good1.jpg</Stimulus>
+        <Stimulus type="image">w4good2.jpg</Stimulus>
+        <Stimulus type="image">w4good3.jpg</Stimulus>
+        <Stimulus type="image">w4good4.jpg</Stimulus>
+
+
+
+
+ 
+		<Stimulus type="image">w5good1.jpg</Stimulus>
+        <Stimulus type="image">w5good2.jpg</Stimulus>
+        <Stimulus type="image">w5good3.jpg</Stimulus>
+        <Stimulus type="image">w5good4.jpg</Stimulus>
+
+
+
+
+
+		<Stimulus type="image">w6good1.jpg</Stimulus>
+        <Stimulus type="image">w6good2.jpg</Stimulus>
+        <Stimulus type="image">w6good3.jpg</Stimulus>
+        <Stimulus type="image">w6good4.jpg</Stimulus>
+
+
+
+
+ 
+      </Stimuli>
+    </Category>
+	
+	    <Category>
+      <CategoryNumber>3</CategoryNumber>
+      <Stimuli>
+        <CategoryName>Black Bad</CategoryName>
+        <CategoryImgURL></CategoryImgURL>
+
+
+
+
+
+        <Stimulus type="image">b1bad5.jpg</Stimulus>
+        <Stimulus type="image">b1bad6.jpg</Stimulus>
+		<Stimulus type="image">b1bad7.jpg</Stimulus>
+        <Stimulus type="image">b1bad8.jpg</Stimulus>
+		
+
+
+
+
+        <Stimulus type="image">b2bad5.jpg</Stimulus>
+        <Stimulus type="image">b2bad6.jpg</Stimulus>
+        <Stimulus type="image">b2bad7.jpg</Stimulus>
+        <Stimulus type="image">b2bad8.jpg</Stimulus>		
+		
+
+
+
+
+        <Stimulus type="image">b3bad5.jpg</Stimulus>
+        <Stimulus type="image">b3bad6.jpg</Stimulus>
+        <Stimulus type="image">b3bad7.jpg</Stimulus>
+        <Stimulus type="image">b3bad8.jpg</Stimulus>
+				
+		<Stimulus type="image">b4bad1.jpg</Stimulus>
+        <Stimulus type="image">b4bad2.jpg</Stimulus>
+        <Stimulus type="image">b4bad3.jpg</Stimulus>
+        <Stimulus type="image">b4bad4.jpg</Stimulus>
+
+
+
+
+ 
+		<Stimulus type="image">b5bad1.jpg</Stimulus>
+        <Stimulus type="image">b5bad2.jpg</Stimulus>
+        <Stimulus type="image">b5bad3.jpg</Stimulus>
+        <Stimulus type="image">b5bad4.jpg</Stimulus>
+
+
+
+
+		
+		<Stimulus type="image">b6bad1.jpg</Stimulus>
+        <Stimulus type="image">b6bad2.jpg</Stimulus>
+        <Stimulus type="image">b6bad3.jpg</Stimulus>
+        <Stimulus type="image">b6bad4.jpg</Stimulus>
+
+
+
+
+
+      </Stimuli>
+    </Category>
+	
+	    <Category>
+      <CategoryNumber>4</CategoryNumber>
+      <Stimuli>
+        <CategoryName>Good</CategoryName>
+        <CategoryImgURL></CategoryImgURL>
+
+
+
+
+
+        <Stimulus type="image">b1good5.jpg</Stimulus>
+        <Stimulus type="image">b1good6.jpg</Stimulus>
+		<Stimulus type="image">b1good7.jpg</Stimulus>
+		<Stimulus type="image">b1good8.jpg</Stimulus>	
+
+
+
+
+
+        <Stimulus type="image">b2good5.jpg</Stimulus>
+        <Stimulus type="image">b2good6.jpg</Stimulus>
+		<Stimulus type="image">b2good7.jpg</Stimulus>
+        <Stimulus type="image">b2good8.jpg</Stimulus>		
+
+
+
+
+
+        <Stimulus type="image">b3good5.jpg</Stimulus>
+        <Stimulus type="image">b3good6.jpg</Stimulus>
+        <Stimulus type="image">b3good7.jpg</Stimulus>
+        <Stimulus type="image">b3good8.jpg</Stimulus>				
+
+		<Stimulus type="image">b4good1.jpg</Stimulus>
+        <Stimulus type="image">b4good2.jpg</Stimulus>
+        <Stimulus type="image">b4good3.jpg</Stimulus>
+        <Stimulus type="image">b4good4.jpg</Stimulus>
+
+
+
+
+
+		<Stimulus type="image">b5good1.jpg</Stimulus>
+        <Stimulus type="image">b5good2.jpg</Stimulus>
+        <Stimulus type="image">b5good3.jpg</Stimulus>
+        <Stimulus type="image">b5good4.jpg</Stimulus>
+
+
+
+
+
+		<Stimulus type="image">b6good1.jpg</Stimulus>
+        <Stimulus type="image">b6good2.jpg</Stimulus>
+        <Stimulus type="image">b6good3.jpg</Stimulus>
+        <Stimulus type="image">b6good4.jpg</Stimulus>
+
+
+
+
+ 
+      </Stimuli>
+    </Category>
+	
+  </Categories>
+
+
+
+
+  <Block TargetDuration="900" DistractorDuration="700" FBDuration="150" TimeoutDuration="150">
+    <TrialCount>35</TrialCount>
+    <Targets>0,4</Targets>
+    <TargetsCount>10,20</TargetsCount>
+    <Distractors>3,2</Distractors>
+    <DistractorsCount>15,5</DistractorsCount>
+  </Block>
+  
+
+  
+  
+
+
+</IAT>
+
+  
