@@ -4,7 +4,7 @@ StudySession studySession = (StudySession) session.getAttribute("studysession");
 String toAddress = studySession.v("followupconsent.email");
 String userId=studySession.getId()+"";
 int delay=6000;
-String emailFile="/user/calvin/contestv2/sendemail.txt";
+String emailFile="/user/calvin/contestml/sendemail.txt";
 String fromAddress="clai@virginia.edu";
 String participantId=toAddress;
 

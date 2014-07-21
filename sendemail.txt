@@ -6,7 +6,7 @@ Thank you very much for completing the first session of this study and for agree
 
 By clicking the link at the bottom of this email, you will be directed to the second session.  The session you will take today is similar to what you did two days ago, but is only five minutes long. Please feel free to follow-up with us if you have any questions.
 
-Please click here to begin this follow-up session: https://dw2.psyc.virginia.edu/implicit/Launch?study=/user/calvin/contestv2/contestv2.t2pi.expt.xml&pID=###
+Please click here to begin this follow-up session: https://dw2.psyc.virginia.edu/implicit/Launch?study=/user/calvin/contestml/contestml.t2pi.expt.xml&pID=###
 
 Thank you again for your time, 
 Calvin Lai and Brian Nosek

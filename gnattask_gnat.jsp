@@ -1,7 +1,7 @@
 <%
 String props = request.getParameter("p");
 if (props == null)
-	props = "/implicit/user/calvin/contestv2/default_gnat.xml";
+	props = "/implicit/user/calvin/contestml/default_gnat.xml";
 %>
 <html>
 <head>

@@ -4,7 +4,7 @@ StudySession studySession = (StudySession) session.getAttribute("studysession");
 String toAddress = studySession.v("serial_uva.email");
 String userId=studySession.getId()+"";
 int delay=172800000;
-String emailFile="/user/calvin/contestv2/sendemail_uva.txt";
+String emailFile="/user/calvin/contestml/sendemail_uva.txt";
 String fromAddress="UVA Psychology <clai@virginia.edu>";
 String participantId=toAddress;
 
