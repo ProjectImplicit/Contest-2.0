@@ -5,7 +5,7 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-	<title>Implicit Association Test</title>
+	<title>Project Implicit</title>
  
 	<script type="text/javascript">
 		function hlght() { if (document.getElementById) document.getElementById('gttt').style.backgroundColor = "#ffffff" ; }
@@ -111,7 +111,7 @@ a.menlnk:hover
 <tr><td>
 
 	<p align="center" class="text"><strong>You have completed the first phase of the study! </strong></p>
-    <p class="text">Thank you for completing the first phase of the study! In two days, you will be contacted via email complete the second phase of the study. The second phase will only take about five minutes. After you have completed that phase, we will give you feedback about your results. The integrity of this study's results depend on you taking this study in isolation. So, please do not discuss this study with anyone else.<br/><br/>
+    <p class="text">Thank you for completing the first phase of the study! In twenty-four hours, you will be contacted via email complete the second phase of the study. The second phase will only take about five minutes. Please complete it as soon as you can when you receive it. After you have completed that phase, we will give you feedback about your results. The integrity of this study's results depend on you taking this study in isolation. So, please do not discuss this study with anyone else.<br/><br/>
 	</p>
  </td>
 </tr>

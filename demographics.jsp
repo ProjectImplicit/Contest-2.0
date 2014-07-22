@@ -13,9 +13,8 @@ String[][][] ratings =
 {{"ratings"},{"ncols","1"},{"flow","horizontal"},{"direction","left"}},
 {{"rat1"},{"options","Female", "Male"}},
 {{"rat2"},{"ncols","9"},{"options","[12..80]"}},
-{{"rat3"},{"options","PSYC1F25", "PSYC1F90"}},
 {{"rat4"},{"options","White/European Origin","Black/African origin","Hispanic or Latino", "Asian","Native Hawaiian/Pacific Islander","More than one race - Black/White","More than one race - Other","Other or Unknown"}},
-{{"rat5"},{"options","Tuesday", "Wednesday", "Thursday"}},
+{{"rat8"},{"flow","vertical"},{"ncols","6"},{"options","UNITED STATES","Afghanistan","Albania","Algeria","Andorra","Angola","Antigua & Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia-Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Rep.","Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","North Korea","South Korea","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","St. Kitts & Nevis","St. Lucia","St. Vincent","Samoa","San Marino","Sao Tome & Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","Spain","Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"}},
 {{"rat6"},{"options","I am very religious","I am moderately religious","I am somewhat religious","I am not at all religious"}}, 
 {{"rat10"},{"options","Biological Sciences/Life Sciences","Business", "Communications","Computer and Information Sciences","Education","Engineering", "Mathematics, Physical Sciences/Technologies","Health Professions or Related Sciences","Humanities/Liberal Arts","Law or Legal Studies","Psychology","Social Sciences or History","Visual or Performing Arts","Other", "Undecided"}},
 {{"rat13"},{"options","Strongly liberal","Moderately liberal","Slightly liberal","Neutral (Moderate)","Slightly conservative","Moderately conservative","Strongly conservative"}},
@@ -23,12 +22,11 @@ String[][][] ratings =
             
 String[][][] demographics =
 {
-{{"demographics"}, {"nelem","8"},{"musthave","0"},{"group","0"},{"gminmax","8.8"},{"gplace","0"},{"gorder","0"},{"gsequence","fixed"}},
-{{"course_class"},{"choices","rat3"},{"stem","Which introductory psychology course are you taking?"}},
-{{"course_section"},{"choices","rat5"},{"stem","When is your introductory psychology course?"}},
+{{"demographics"}, {"nelem","7"},{"musthave","0"},{"group","0"},{"gminmax","7.7"},{"gplace","0"},{"gorder","0"},{"gsequence","fixed"}},
 {{"gender"},{"choices","rat1"},{"stem","What is your gender?"}},
 {{"age"},{"choices","rat2"},{"stem","What is your age?"}},
-{{"race"},{"choices","rat4"},{"stem","Please indicate your <u>race</u>."}},
+{{"race"},{"choices","rat4"},{"stem","Please indicate your <u>race/ethnicity</u>."}},
+{{"citizen"},{"choices","rat8"},{"stem","Please indicate the country of your <u>citizenship</u>."}},
 {{"major"},{"choices","rat10"},{"stem","Please indicate your intended <u>major field of study</u>"}},
 {{"relID"},{"choices","rat6"},{"stem","How religious are you?."}},
 {{"politics"},{"choices","rat13"},{"stem","Please indicate how you identify on political issues."}},

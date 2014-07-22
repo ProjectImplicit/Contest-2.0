@@ -64,12 +64,12 @@
                 <Stimulus type="image">wf3_nc.jpg</Stimulus>
                 <Stimulus type="image">wm4_nc.jpg</Stimulus>
                 <Stimulus type="image">wm6_nc.jpg</Stimulus>
-                <Stimulus type="image">jaj.manson.jpg</Stimulus>
-                <Stimulus type="image">jaj.yates.jpg</Stimulus>
+                <Stimulus type="image">jaj.breivik.jpg</Stimulus>
+                <Stimulus type="image">jaj.anthony.jpg</Stimulus>
                 <Stimulus type="image">jaj.hitler.jpg</Stimulus>
-                <Stimulus type="image">jaj.mcveigh.jpg</Stimulus>
-                <Stimulus type="image">jaj.gotti.jpg</Stimulus>
-                <Stimulus type="image">jaj.bundy.jpg</Stimulus>
+                <Stimulus type="image">jaj.madoff.jpg</Stimulus>
+                <Stimulus type="image">jaj.loughner.jpg</Stimulus>
+                <Stimulus type="image">jaj.sandusky.jpg</Stimulus>
             </Stimuli>
         </Category>
     </Categories>
