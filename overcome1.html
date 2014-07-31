@@ -1,46 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head><title></title>
-
 <style type="text/css">
-
 body {background-color: #ffffff;}
-
 td {font-family:arial;font-size:18px}
-
 .heading {font-size: 18px;font-weight:bold;text-decoration: underline;}
-
 .dropdown {font-family:arial;font-size: 18px;}
-
 .smalltext {font-family:arial;font-size: 12px;}
-
 .medtext {font-family:arial;font-size: 18px;}
-
 </style>
-
-
-
 <script language="JavaScript" type="text/javascript" src="/implicit/common/en-us/js/task.js"></script>
-
+<script type="text/javascript">
+ function ValidateForm()
+{ 
+	if (document.form1.alerts.value=="one") {
+		document.form1.submit();
+	} else if(document.form1.mc_summarize.value.length<24) {
+		alert("Please write at least 24 characters that summarizes the main points of the statement.");
+		document.form1.alerts.value="one";
+	}        else document.form1.submit();
+  }
+</script>
 </head>
 
-
-
 <body>
-
-
 <br><br>
 <form method="post" action="/implicit/Study" name="form1" onSubmit="return replacetextareaenters();">
 <input type="hidden" name="mode" value="insQuesData" />
+<input type="hidden" name="alerts" value="none" />
 
 <div  id='ins1' style='display:block'>
-
  
  
  <table align="center"width="800px">
-
  <tr>
    <td><p><span class="style3">
      <p> Please read the following statement carefully and  consider its implications. Afterward, you will be asked to briefly describe the main points. </p>
@@ -50,31 +42,21 @@ td {font-family:arial;font-size:18px}
      
      <center> In the box below, please write a sentence or two that summarizes the main points of the statement.</center>
        
-       <textarea name="overcome_mc" rows=5 cols=120> </textarea> 
+       <textarea name="mc_summarize" rows=3 cols=120> </textarea> 
        <br/> 
        
        
        <br/><br/>
+	      <button type="button" onclick="return ValidateForm()">Continue</button>
      </span></p>
 </td></tr>
-
 </table>
-
+</div>
+<div style="display:none">
+ <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("Continue");</script></h1>
 </div>
 
-
-
-
-<div id="realbutton">
  
-  <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("NEXT PAGE");</script></h1>
-
-</div>
-
-
- 
-
 </form>
 </body>
-
 </html>

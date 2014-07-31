@@ -1,92 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head><title></title>
-
 <style type="text/css">
-
 body {background-color: #ffffff;}
-
 td {font-family:arial;font-size:18px}
-
 .heading {font-size: 18px;font-weight:bold;text-decoration: underline;}
-
 .dropdown {font-family:arial;font-size: 18px;}
-
 .smalltext {font-family:arial;font-size: 12px;}
-
 .medtext {font-family:arial;font-size: 18px;}
-
 </style>
-
-
-
 <script language="JavaScript" type="text/javascript" src="/implicit/common/en-us/js/task.js"></script>
-
 <script type="text/javascript">
-var minlength=15;
-function validate_form()
+ function ValidateForm()
 { 
-  if  (document.form1.overcome_reason.value.length < minlength){ 
-	alert("Please type more than "+minlength+" characters for each reason.");
-		else document.form1.submit();
+	if (document.form1.alerts.value=="one") {
+		document.form1.submit();
+	} else if(document.form1.mc_reason.value.length<2) {
+		alert("Please write at least one reason about why multiculturalism is a good approach for improving relationships between groups.");
+		document.form1.alerts.value="one";
+	}        else document.form1.submit();
   }
 </script>
 </head>
 
-
-</head>
-
-
-
 <body>
-
-
 <br><br>
 <form method="post" action="/implicit/Study" name="form1" onSubmit="return replacetextareaenters();">
-
+<input type="hidden" name="alerts" value="none" />
 <input type="hidden" name="mode" value="insQuesData" />
-
 <div  id='ins1' style='display:block'>
-
  
  
  <table align="center"width="800px">
-
  <tr>
    <td><p>In the box below, please list one reason why multiculturalism (the approach described on the previous page) is a good approach for improving relationships between groups.<span class="style3">
    
  <p>
- 
-		Reason 1:
        
-       <textarea name="overcome_reason" rows=5 cols=120> </textarea> 
+       <textarea name="mc_reason" rows=5 cols=120> </textarea> 
        <br/> <p>
        
        
        <br/><br/>
+	      <button type="button" onclick="return ValidateForm()">Continue</button>
      </p>
-
 </td></tr>
-
 </table>
-
 </div>
-
-
-
-
-<div id="realbutton">
- 
-  <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("NEXT PAGE");</script></h1>
-
+<div style="display:none">
+ <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("Continue");</script></h1>
 </div>
-
-
  
-
 </form>
 </body>
-
 </html>
