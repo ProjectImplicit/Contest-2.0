@@ -11,6 +11,7 @@
 		<Task id="serial">serial_t1.html</Task>
 		<Task id="sendemail">sendemail.jsp</Task>
 		<Task id="emailresearcher">emailresearcher_t1.jsp</Task>
+
 		<!--Scripting for Pretest IAT-->
 		<Branch type="script" id="preiat">
 			s = get("realstart");
@@ -49,8 +50,7 @@
 				children.add(nextTask2);
 			}		
 			return nextTask;
-        </Branch>		
-
+        </Branch>	
 
 		<!--Scripting for Posttest IAT-->
 		<Branch type="script" id="postiat">
