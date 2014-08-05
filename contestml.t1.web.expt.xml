@@ -7,7 +7,7 @@
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
 		<Task id="lastpage">lastpage.html</Task>
-		<Task id="debriefing_t1">debriefing_t1.jsp</Task>
+		<Task id="debriefing">debriefing_t1.jsp</Task>
 		<Task id="serial">serial_t1.html</Task>
 		<Task id="sendemail">sendemail.jsp</Task>
 		<Task id="emailresearcher">emailresearcher_t1.jsp</Task>
@@ -382,6 +382,6 @@
 		<Task id="questionnaire"/>	
 		<Task id="demographics"/>			
 		<Task id="lastpage"/>
-		<Task id="debriefing_t1"/>
+		<Task id="debriefing"/>
 	</Map>
 </Study>
