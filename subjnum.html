@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>RESEARCHER USE ONLY</title>
+<style type="text/css">
+body {background-color: #ffffff;}
+td {font-family:palatino linotype;font-size:18px}
+.heading {font-size: 18px;font-weight:bold;text-decoration: underline;}
+.dropdown {font-family:palatino linotype;font-size: 18px;}
+</style>
+<script language="JavaScript" type="text/javascript" src="/implicit/common/en-us/js/task.js"></script>
+<script language="JavaScript">
+resizeTo( screen.availWidth, screen.availHeight );
+moveTo(screen.availLeft + (screen.availWidth), 0 );
+</script>
+<script type="text/javascript">
+ function ValidateForm()
+{ 
+	if(document.form1.subjnum.value.length<1) {
+		alert("Please enter the subject ID.");
+	} else if(document.form1.numparticipants.value.length<1) {
+		alert("Please enter the number of participants taking this study during this timeslot.");
+	}           else document.form1.submit();
+  }
+</script>
+</head>
+<body>
+<form method="post" action="/implicit/Study" name="form1">
+<input type="hidden" name="mode" value="insQuesData" />
+<table cellpadding=3 border="0" width="80%" align=center>
+<tr>
+<td class=heading align=center>Subject ID</td>
+</tr>
+</table> 
+<table cellpadding="0" border="0" cellspacing="0" width="766" align="center">
+	<tr>
+		<td>
+			<table border="0" cellpadding="1" cellspacing="1">
+				<tr>
+					<td colspan="2" align=left>
+						<span>IF YOU ARE A PARTICIPANT AND ARE SEEING THIS SCREEN, PLEASE ALERT YOUR EXPERIMENTER. Researchers, please answer all questions below. If you don't know how to answer a question, please leave it blank and leave a note in the comment box.
+						<br><br>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+    <tr>
+      <td>
+        <table border="0" cellpadding="1" cellspacing="1">   
+          <tr></br>
+            <td align="left" width="500"><span>What is the subject ID for this session?</span></td>
+            <td align="left" width="370">&nbsp;&nbsp;&nbsp;
+			<input type="text" name="subjnum" size="4">
+            </td>
+          </tr>
+           </table>
+			<br>
+       </td>
+     </tr>
+     <tr>
+      <td>
+        <table border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td align="left" width="500"><span>How many participants are taking this study during this timeslot? (that is, at the same time)</span></td>
+            <td align="left" width="370">&nbsp;&nbsp;&nbsp;
+			<input type="text" name="numparticipants" size="4">
+            </td>
+          </tr>
+           </table>
+			<br>
+       </td>
+     </tr>	 
+</table>
+<h1 align="center"> <button type="button" onclick="return ValidateForm()">CONTINUE</button>
+<div style="display:none">
+<h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("CONTINUE");</script></h1>
+<br>
+</td>
+</tr>
+</table>
+<br />
+<!-- DON&rsquo;T EDIT ANYTHING BELOW THIS LINE! -->
+</center>
+</form>
+</body>
+</html>

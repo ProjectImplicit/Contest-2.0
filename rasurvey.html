@@ -12,9 +12,19 @@ td {font-family:palatino linotype;font-size:18px}
 resizeTo( screen.availWidth, screen.availHeight );
 moveTo(screen.availLeft + (screen.availWidth), 0 );
 </script>
+<script type="text/javascript">
+ function ValidateForm()
+{ 
+	if(document.form1.expgender.value==".") {
+		alert("Please enter the experimenter gender.");
+	} else if(document.form1.exprace.value==".") {
+		alert("Please enter the experimenter race/ethnicity.");
+	}           else document.form1.submit();
+  }
+</script>
 </head>
 <body>
-<form method="post" action="/implicit/Study" name="labsurvey">
+<form method="post" action="/implicit/Study" name="form1">
 <input type="hidden" name="mode" value="insQuesData" />
 <table cellpadding=3 border="0" width="80%" align=center>
 <tr>
@@ -89,30 +99,11 @@ moveTo(screen.availLeft + (screen.availWidth), 0 );
 		<br>
        </td>
      </tr>
-          
-        
-        
-          
-     <tr>
-      <td>
-        <table border="0" cellpadding="1" cellspacing="1">
-          
-          <tr>
-            <td align="left" width="360"><span>3. How many participants are taking this study during this timeslot? (that is, at the same time)</span></td>
-            <td align="left" width="370">&nbsp;&nbsp;&nbsp;
-			<input type="text" name="numparticipants" size="3">
-            </td>
-          </tr>
-           </table>
-			<br>
-       </td>
-     </tr>
     <tr>
       <td>
         <table border="0" cellpadding="1" cellspacing="1">
-          
           <tr>
-            <td align="left" width="360"><span>4. If you have any additional items to note or issues to clarify please explain those in this box:</span></td>
+            <td align="left" width="360"><span>3. If you have any additional items to note or issues to clarify please explain those in this box:</span></td>
             <td align="left" width="370">&nbsp;&nbsp;&nbsp;
 			 <textarea cols="40" rows="8" name="expcomments"></textarea>
             </td>
@@ -124,6 +115,8 @@ moveTo(screen.availLeft + (screen.availWidth), 0 );
 	 
 </table>
 <br>
+<h1 align="center"> <button type="button" onclick="return ValidateForm()">CONTINUE</button>
+<div style="display:none">
 <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("CONTINUE");</script></h1>
 <br>
 </td>

@@ -2,15 +2,18 @@
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
-		<Task id="consent">consent.htm</Task>
+		<Task id="rasurvey">rasurvey.html</Task>
+		<Task id="subjnum">subjnum.html</Task>		
 		<Task id="realstart">realstartskip.jsp</Task>
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
 		<Task id="lastpage">lastpage.html</Task>
-		<Task id="debriefing_t1">debriefing_t1.jsp</Task>
+		<Task id="debriefing_t1">debriefing_t1lab.html</Task>
+		<Task id="raissues">raissues.html</Task>
+		<Task id="labend">labend.html</Task>
 		<Task id="serial">serial_t1.html</Task>
 		<Task id="sendemail">sendemail.jsp</Task>
-		<Task id="emailresearcher">emailresearcher_t1.jsp</Task>
+
 		<!--Scripting for Pretest IAT-->
 		<Branch type="script" id="preiat">
 			s = get("realstart");
@@ -49,8 +52,7 @@
 				children.add(nextTask2);
 			}		
 			return nextTask;
-        </Branch>		
-
+        </Branch>	
 
 		<!--Scripting for Posttest IAT-->
 		<Branch type="script" id="postiat">
@@ -246,10 +248,10 @@
 		
 		<Map>
 		<Task id="startpage"/>
-		<Task id="consent"/>	
+		<Task id="rasurvey"/>
+		<Task id="subjnum"/>	
 		<Task id="serial"/>
 		<Task id="sendemail"/>	
-		<Task id="emailresearcher"/>
 		
 		<Task id="realstart"/>
 		<Branch type="script" id="preiat"/>
@@ -383,5 +385,7 @@
 		<Task id="demographics"/>			
 		<Task id="lastpage"/>
 		<Task id="debriefing_t1"/>
-	</Map>
+		<Task id="raissues"/>
+		<Task id="labend"/>
+		</Map>
 </Study>
