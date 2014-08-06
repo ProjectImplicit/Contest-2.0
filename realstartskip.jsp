@@ -44,7 +44,7 @@ function cont()
 }
 //Set the CS's for this session. We save it in the form below and read it during the session.
 
-	var tasks = ["instructions_set1_cc_pre", "instructions_set1_dc_pre", "instructions_set2_cc_pre", "instructions_set2_dc_pre", "instructions_set1_cd_pre", "instructions_set1_dd_pre", "instructions_set2_cd_pre", "instructions_set2_dd_pre", "nopre_s1c","nopre_s2c","nopre_s1d","nopre_s2d"];
+	var tasks = ["instructions_set1_cc_pre", "instructions_set1_dc_pre", "instructions_set2_cc_pre", "instructions_set2_dc_pre", "instructions_set1_cd_pre", "instructions_set1_dd_pre", "instructions_set2_cd_pre", "instructions_set2_dd_pre"];
 fisherYates(tasks);
 var nextTask = tasks[0];
 
