@@ -1,0 +1,135 @@
+<Study id="calvin.contestml.t1" datagroup="research"> 
+	<Definitions>
+		<!-- Core Files -->
+		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+		<Task id="consent">consent.htm</Task>
+		<Task id="lastpage">lastpage.html</Task>
+		<Task id="debriefing">debriefing_t1.jsp</Task>
+
+		<!-- Control Condition -->
+		<Task id="control">control.html</Task>
+		
+		<!-- Counter --> 
+		<Task id="counter1">counter1.html</Task>
+		<Task id="counter2">counter2.html</Task>		
+		<Task id="counter3" file="counter3.xml">iattask_counter.jsp</Task>
+
+		<!-- Dodgeball --> 
+		<Task id="dodge1">dodge1.html</Task>
+		<Task id="dodge2">dodge2.html</Task>
+		<Task id="dodge3">dodge3.html</Task>
+		<Task id="dodge4">dodge4.html</Task>
+		<Task id="dodge5">dodge5.html</Task>
+		<Task id="dodge6">dodge6.html</Task>
+		<Task id="dodge7">dodge7.html</Task>
+		<Task id="dodge8">dodge8.html</Task>
+		<Task id="dodge9">dodge9.html</Task>
+		<Task id="dodge10">dodge10.html</Task>
+		<Task id="dodge11">dodge11.html</Task>
+		<Task id="dodge12">dodge12.html</Task>
+		<Task id="dodge13">dodge13.html</Task>
+		<Task id="dodge14">dodge14.html</Task>
+		<Task id="dodge15">dodge15.html</Task>
+		<Task id="dodge16">dodge16.html</Task>
+		<Task id="dodge17">dodge17.html</Task>
+		<Task id="dodge18">dodge18.html</Task>
+		<Task id="dodge19">dodge19.html</Task>
+		<Task id="dodge20">dodge20.html</Task>
+		<Task id="dodge21">dodge21.html</Task>
+		<Task id="dodge22">dodge22.html</Task>
+		<Task id="dodge23">dodge23.html</Task>
+		<Task id="dodge24">dodge24.html</Task>
+		<Task id="dodge25">dodge25.html</Task>
+		<Task id="dodge26">dodge26.html</Task>
+		<Task id="dodge27">dodge27.html</Task>
+		<Task id="dodge28">dodge28.html</Task>
+		<Task id="dodge29">dodge29.html</Task>
+		<Task id="dodge30">dodge30.html</Task>
+		<Task id="dodge31">dodge31.html</Task>
+		<Task id="dodge32">dodge32.html</Task>
+		<Task id="dodge33">dodge33.html</Task>
+		<Task id="dodge34">dodge34.html</Task>
+		<Task id="dodge35">dodge35.html</Task>
+		<Task id="dodge36">dodge36.html</Task>
+		<Task id="dodge37">dodge37.html</Task>
+		<Task id="dodge38">dodge38.html</Task>
+		<Task id="dodge39">dodge39.html</Task>
+		<Task id="dodge40">dodge40.html</Task>
+		<Task id="dodge41">dodge41.html</Task>
+		<Task id="dodge42">dodge42.html</Task>
+		<Task id="dodge43">dodge43.html</Task>
+		
+		<!-- Evaluative Conditioning -->
+		<Task id="evalcond1">evalcond1.htm</Task>
+		<Task id="evalcond2">evalcond2.htm</Task>
+		<Task id="evalcond3">evalcond3.htm</Task>		
+		<Task id="evalcond4" file="evalcond4.xml">/common/en-us/html/spfdbl3.jsp</Task>
+		<Task id="evalcond5">evalcond5.html</Task>		
+		
+		<!-- Faking -->
+		<Task id="fake3">fake3.html</Task>
+		<Task id="fake4">fake4.html</Task>
+		<Task id="fake5">fake5.html</Task>
+		<Task id="fake6">fake6.html</Task>	
+		
+		<!-- GNAT -->
+		<Task id="gnat1">gnat1.html</Task>
+		<Task id="gnat2" file="gnat2.xml">gnattask_gnat.jsp</Task>
+		<Task id="gnat3">gnat3.html</Task>
+		<Task id="gnat4" file="gnat4.xml">gnattask_gnat.jsp</Task>
+		<Task id="gnat5">gnat5.html</Task>		
+		<Task id="gnat6" file="gnat6.xml">gnattask_gnat.jsp</Task>	
+		<Task id="gnat7">gnat7.htm</Task>	
+		
+			<!-- Implementation Intentions -->
+		<Task id="implement3">implement3.html</Task>
+		<Task id="implement4">implement4.html</Task>
+		<Task id="implement5">implement5.html</Task>
+		<Task id="implement6">implement6.html</Task>	
+				
+		<!-- Multiculturalism -->
+		<Task id="overcome1">overcome1.html</Task>
+		<Task id="overcome2">overcome2.html</Task>
+		<Task id="overcome3">overcome3.html</Task>	
+		
+		<!-- Scenario -->	
+		<Task id="scenario1">scenario1.html</Task>
+		<Task id="scenario2">scenario2.html</Task>		
+		<Task id="scenario3">scenario3.html</Task>	
+		
+			<!-- Survivor -->
+		<Task id="survivor1">survivor1.html</Task>
+		<Task id="survivor2">survivor2.html</Task>
+		<Task id="survivor3">survivor3.html</Task>
+		<Task id="survivor4">survivor4.html</Task>
+		<Task id="survivor5">survivor5.html</Task>
+		<Task id="survivor6">survivor6.html</Task>
+		<Task id="survivor7">survivor7.html</Task>
+		<Task id="survivor8">survivor8.html</Task>
+		<Task id="survivor9">survivor9.html</Task>
+		<Task id="survivor10">survivor10.html</Task>
+		<Task id="survivor11">survivor11.html</Task>
+		<Task id="survivor12">survivor12.html</Task>
+		<Task id="survivor13">survivor13.html</Task>	
+		</Definitions>
+		
+		<Map>
+		<Task id="startpage"/>
+		<Task id="consent"/>	
+
+		<Branch type ="group" select="1" id="condition">
+			
+			<Branch type="group" id = "evalcond">
+				<Task id="evalcond1"/>
+				<Task id="evalcond2"/>
+				<Task id="evalcond3"/>
+				<Task id="evalcond4"/>		
+				<Task id="evalcond5"/>					
+			</Branch>
+
+		</Branch>	
+			
+		<Task id="lastpage"/>
+		<Task id="debriefing"/>
+	</Map>
+</Study>
