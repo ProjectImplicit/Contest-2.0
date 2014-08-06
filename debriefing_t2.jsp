@@ -23,7 +23,7 @@
 		%>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-	<title>Implicit Association Test</title>
+	<title>Debriefing</title>
  	<script type="text/javascript">
 		function hlght() { if (document.getElementById) document.getElementById('gttt').style.backgroundColor = "#ffffff" ; }
 		function llght() { if (document.getElementById) document.getElementById('gttt').style.backgroundColor = "#c2d2dd" ; }
@@ -88,33 +88,6 @@ a.menlnk:hover
 </head>
   
 <body>
- <center>
-       <table width="800" cellpadding="0" cellspacing="0" border="0" id="header">
-         <tr class="dgld">
-           <td align="left"><a href="/implicit/"><img src="/implicit/images/logobanner.gif"  alt="Implicit Association Test" width="477" height="49" /></a></td>
-           <td align="center">
-             <div id="reg"><a href="/implicit/research" onMouseOver="hlght()" onMouseOut="llght()">Begin a<br />
-             Study</a></div>
-           </td>
-         </tr>
-       </table>
-  
- <table width="800" border="0" cellpadding="0" cellspacing="0" id="menu">
-   <tr class="lgld" align="center">
-     <td><a class="menlnk" href="/implicit/Registration">Registration</a></td>
-     <td><img src="/implicit/images/x.gif" width="1" height="20" alt="" /></td>
-     <td><a class="menlnk" href="/implicit/backgroundinformation.html">Background Information</a></td>
-     <td><img src="/implicit/images/x.gif" width="1" height="20" alt="" /></td>
-     <td><a class="menlnk" href="/implicit/contactinformation.html">Contact Information</a></td>
-     <td><img src="/implicit/images/x.gif" width="1" height="20" alt="" /></td>
-     <td><a class="menlnk" href="/implicit/compatibilityissues.html">System Requirements</a></td>
-     <td><img src="/implicit/images/x.gif" width="1" height="20" alt="" /></td>
-     <td><a class="menlnk" href="/implicit/privacy.html">Privacy</a></td>
-     <td><img src="/implicit/images/x.gif" width="1" height="20" alt="" /></td>
-     <td><a class="menlnk" href="/implicit/demo/">IAT Home</a></td>
-   </tr>
- </table>
- </center>
  <table width=100%>
 <tr><td>
   
@@ -144,26 +117,15 @@ a.menlnk:hover
 		assessment of your implicit thoughts or feelings. This and future research will clarify the 
 		way in which implicit thinking and feelings affects our perception, judgment, and action.</p>
 		
-<p class="text">The topic of this task was randomly assigned to you from a list of 
-	  	approximately 100 topics. You are welcome to complete as many sessions as you wish, and every session will be a different topic. 
-		Some will be topics you have thought about many times, others might be new or unusual topics that you have not considered before. 
-		Just return to the <a href="/implicit/research/">login page</a> 
-		and enter your email address to start again.</p>
 		<p class="text">If you have unanswered questions about the IAT, please review 
 		<a href="/implicit/backgroundinformation.html">background information</a> 
 		about this research and follow the links to the questions of specific interest to you.</p>
 	<p class="text">Thanks again for your participation.</p>
 	<p class="text">If you have any questions about this study please email the lead investigator, Calvin Lai (<a href="mailto:ckl5ae@virginia.edu">ckl5ae@virginia.edu</a>).</p>
-		<p class="text">Please click <a href="javascript:window.print()" onMouseover="return status='Print this page'" onMouseout="return status=''">here</a> to print this page.</p>
 		</td>
 </tr>
-	<tr>
-		<td align="center"><p class="text"><a href="/implicit/research">Try another set of topics</a> || <a href="/implicit/backgroundinformation.html">Background Information</a> || <a href="/implicit/privacy.html">Privacy Information</a> || <a href="/implicit">Project Implicit Home</a></p></td>
-	</tr>
 </table>
-<table width="600" cellpadding="10" cellspacing="0" border="0">
-<tr><td align="center"><p class="smltext"><a href="/implicit/demo/copyright.html">Copyright &copy; IAT Corp.</a></p></td>
-</tr></table></td>
+</td>
 </tr>
 </table>
 </body>
