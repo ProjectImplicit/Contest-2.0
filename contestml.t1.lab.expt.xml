@@ -45,12 +45,6 @@
 				nextTask2.setParent(get("preiat"));
 				children.add(nextTask2);
 			}		
-			if (taskName.equals("nopre_s1c") || taskName.equals("nopre_s2c") || taskName.equals("nopre_s1d") || taskName.equals("nopre_s2d")) 
-			{
-				nextTask2 = get("skip2");
-				nextTask2.setParent(get("preiat"));
-				children.add(nextTask2);
-			}		
 			return nextTask;
         </Branch>	
 
@@ -59,7 +53,7 @@
 			s = get("realstart");
 			taskName = s.results{"nexttask"};
 
-			if (taskName.equals("instructions_set2_cc_pre") || taskName.equals("instructions_set2_dc_pre") || taskName.equals("nopre_s1c")) 
+			if (taskName.equals("instructions_set2_cc_pre") || taskName.equals("instructions_set2_dc_pre"))
 			{
 				PostInst = get("instructions_c_set1_post");
 				PostInst.setParent(get("postiat"));
@@ -68,7 +62,7 @@
 				PostIAT.setParent(get("postiat"));
 				children.add(PostIAT);
 			}
-			if (taskName.equals("instructions_set2_cd_pre") || taskName.equals("instructions_set2_dd_pre") || taskName.equals("nopre_s1d")) 
+			if (taskName.equals("instructions_set2_cd_pre") || taskName.equals("instructions_set2_dd_pre")) 
 			{
 				PostInst = get("instructions_d_set1_post");
 				PostInst.setParent(get("postiat"));
@@ -78,7 +72,7 @@
 				children.add(PostIAT);
 			}		
 						
-			if (taskName.equals("instructions_set1_cc_pre") || taskName.equals("instructions_set1_dc_pre") || taskName.equals("nopre_s2c")) 
+			if (taskName.equals("instructions_set1_cc_pre") || taskName.equals("instructions_set1_dc_pre")) 
 			{
 				PostInst = get("instructions_c_set2_post");
 				PostInst.setParent(get("postiat"));
@@ -87,7 +81,7 @@
 				PostIAT.setParent(get("postiat"));
 				children.add(PostIAT);
 			}
-			if (taskName.equals("instructions_set1_cd_pre") || taskName.equals("instructions_set1_dd_pre") || taskName.equals("nopre_s2d")) 
+			if (taskName.equals("instructions_set1_cd_pre") || taskName.equals("instructions_set1_dd_pre")) 
 			{
 				PostInst = get("instructions_d_set2_post");
 				PostInst.setParent(get("postiat"));
@@ -109,13 +103,6 @@
 		<Task id="5b_iatd_set1_post" file="5b_raced_set1_post.xml">/common/en-us/html/iattask6.jsp</Task>
 		<Task id="5b_iatc_set2_post" file="5b_racec_set2_post.xml">iattask_set2.jsp</Task>
 		<Task id="5b_iatd_set2_post" file="5b_raced_set2_post.xml">iattask_set2.jsp</Task>
-		
-		<!-- No Pretest Filler Pages-->
-		<Task id="nopre_s1c">skip.html</Task>
-		<Task id="nopre_s2c">skip.html</Task>
-		<Task id="nopre_s1d">skip.html</Task>
-		<Task id="nopre4_s2d">skip.html</Task>
-		<Task id="skip2">skip.html</Task>	
 		
 		<!--Set 1 Pretest Instructions-->
 		<Task id="instructions_set1_cc_pre">instructions.html</Task>
@@ -196,8 +183,6 @@
 		<Task id="evalcond5">evalcond5.html</Task>		
 		
 		<!-- Faking -->
-		<Task id="fake1">strat1.html</Task>
-		<Task id="fake2" file="strat2.xml">/common/en-us/html/iattask6.jsp</Task>	
 		<Task id="fake3">fake3.html</Task>
 		<Task id="fake4">fake4.html</Task>
 		<Task id="fake5">fake5.html</Task>
@@ -213,8 +198,6 @@
 		<Task id="gnat7">gnat7.htm</Task>	
 		
 			<!-- Implementation Intentions -->
-		<Task id="implement1">strat1.html</Task>
-		<Task id="implement2" file="strat2.xml">/common/en-us/html/iattask6.jsp</Task>	
 		<Task id="implement3">implement3.html</Task>
 		<Task id="implement4">implement4.html</Task>
 		<Task id="implement5">implement5.html</Task>
@@ -272,8 +255,6 @@
 			</Branch>
 				
 			<Branch type="group" id = "fake">
-				<Task id="fake1"/>
-				<Task id="fake2"/>
 				<Task id="fake3"/>
 				<Task id="fake4"/>			
 				<Task id="fake5"/>
@@ -281,8 +262,6 @@
 			</Branch>	
 			
 			<Branch type="group" id = "implement">			
-				<Task id="implement1"/>
-				<Task id="implement2"/>
 				<Task id="implement3"/>
 				<Task id="implement4"/>			
 				<Task id="implement5"/>
