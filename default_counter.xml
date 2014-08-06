@@ -40,7 +40,7 @@
 
 	<arg name="INST_PADDING">20</arg>
 
-	<arg name="ERROR_PADDING">50</arg>
+	<arg name="ERROR_PADDING">10</arg>
 
 	<arg name="LEFT_KEY">69</arg>
 
