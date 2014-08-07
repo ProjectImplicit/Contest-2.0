@@ -1,0 +1,366 @@
+<Study id="calvin.contestml.t1" datagroup="research"> 
+	<Definitions>
+		<!-- Core Files -->
+		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+		<Task id="consent">consent.htm</Task>
+		<Task id="realstart">realstartskip.jsp</Task>
+		<Task id="questionnaire">questionnaire.jsp</Task>
+		<Task id="demographics">demographics.jsp</Task>	
+		<Task id="lastpage">lastpage.html</Task>
+		<Task id="debriefing">debriefing_t1.jsp</Task>
+		<Task id="serial">serial_t1.html</Task>
+		<Task id="sendemail">sendemail_un.jsp</Task>
+		<Task id="emailresearcher">emailresearcher_t1un.jsp</Task>
+
+		<!--Scripting for Pretest IAT-->
+		<Branch type="script" id="preiat">
+			s = get("realstart");
+			taskName = s.results{"nexttask"};
+            nextTask = get(taskName);
+        	nextTask.setParent(get("preiat"));		
+		
+			if (taskName.equals("instructions_set1_cc_pre") || taskName.equals("instructions_set1_cd_pre")) 
+			{
+				nextTask2 = get("5b_iatc_set1_pre");
+				nextTask2.setParent(get("preiat"));
+				children.add(nextTask2);
+			}
+			if (taskName.equals("instructions_set1_dc_pre") || taskName.equals("instructions_set1_dd_pre")) 
+			{
+				nextTask2 = get("5b_iatd_set1_pre");
+				nextTask2.setParent(get("preiat"));
+				children.add(nextTask2);
+			}
+			if (taskName.equals("instructions_set2_cc_pre") || taskName.equals("instructions_set2_cd_pre")) 
+			{
+				nextTask2 = get("5b_iatc_set2_pre");
+				nextTask2.setParent(get("preiat"));
+				children.add(nextTask2);
+			}
+			if (taskName.equals("instructions_set2_dc_pre") || taskName.equals("instructions_set2_dd_pre")) 
+			{
+				nextTask2 = get("5b_iatd_set2_pre");
+				nextTask2.setParent(get("preiat"));
+				children.add(nextTask2);
+			}		
+			return nextTask;
+        </Branch>	
+
+		<!--Scripting for Posttest IAT-->
+		<Branch type="script" id="postiat">
+			s = get("realstart");
+			taskName = s.results{"nexttask"};
+
+			if (taskName.equals("instructions_set2_cc_pre") || taskName.equals("instructions_set2_dc_pre"))
+			{
+				PostInst = get("instructions_c_set1_post");
+				PostInst.setParent(get("postiat"));
+				children.add(PostInst);
+				PostIAT = get("5b_iatc_set1_post");
+				PostIAT.setParent(get("postiat"));
+				children.add(PostIAT);
+			}
+			if (taskName.equals("instructions_set2_cd_pre") || taskName.equals("instructions_set2_dd_pre")) 
+			{
+				PostInst = get("instructions_d_set1_post");
+				PostInst.setParent(get("postiat"));
+				children.add(PostInst);				
+				PostIAT = get("5b_iatd_set1_post");
+				PostIAT.setParent(get("postiat"));
+				children.add(PostIAT);
+			}		
+						
+			if (taskName.equals("instructions_set1_cc_pre") || taskName.equals("instructions_set1_dc_pre")) 
+			{
+				PostInst = get("instructions_c_set2_post");
+				PostInst.setParent(get("postiat"));
+				children.add(PostInst);
+				PostIAT = get("5b_iatc_set2_post");
+				PostIAT.setParent(get("postiat"));
+				children.add(PostIAT);
+			}
+			if (taskName.equals("instructions_set1_cd_pre") || taskName.equals("instructions_set1_dd_pre")) 
+			{
+				PostInst = get("instructions_d_set2_post");
+				PostInst.setParent(get("postiat"));
+				children.add(PostInst);
+				PostIAT = get("5b_iatd_set2_post");
+				PostIAT.setParent(get("postiat"));
+				children.add(PostIAT);
+			}
+			return children.get(0);
+        </Branch>		
+		
+		<!-- IAT Pretest-->
+		<Task id="5b_iatc_set1_pre" file="5b_racec_set1_pre.xml">/common/en-us/html/iattask6.jsp</Task>
+		<Task id="5b_iatd_set1_pre" file="5b_raced_set1_pre.xml">/common/en-us/html/iattask6.jsp</Task>
+		<Task id="5b_iatc_set2_pre" file="5b_racec_set2_pre.xml">iattask_set2.jsp</Task>
+		<Task id="5b_iatd_set2_pre" file="5b_raced_set2_pre.xml">iattask_set2.jsp</Task>
+		<!-- IAT Posttest-->		
+		<Task id="5b_iatc_set1_post" file="5b_racec_set1_post.xml">/common/en-us/html/iattask6.jsp</Task>
+		<Task id="5b_iatd_set1_post" file="5b_raced_set1_post.xml">/common/en-us/html/iattask6.jsp</Task>
+		<Task id="5b_iatc_set2_post" file="5b_racec_set2_post.xml">iattask_set2.jsp</Task>
+		<Task id="5b_iatd_set2_post" file="5b_raced_set2_post.xml">iattask_set2.jsp</Task>
+		
+		<!--Set 1 Pretest Instructions-->
+		<Task id="instructions_set1_cc_pre">instructions.html</Task>
+		<Task id="instructions_set1_dc_pre">instructions.html</Task>		
+		<Task id="instructions_set1_cd_pre">instructions.html</Task>
+		<Task id="instructions_set1_dd_pre">instructions.html</Task>
+
+		<!--Set 2 Pretest Instructions-->
+		<Task id="instructions_set2_cd_pre">instructions_set2.html</Task>
+		<Task id="instructions_set2_dd_pre">instructions_set2.html</Task>
+		<Task id="instructions_set2_cc_pre">instructions_set2.html</Task>
+		<Task id="instructions_set2_dc_pre">instructions_set2.html</Task>
+
+		<!--Posttst Instructions-->
+		<Task id="instructions_c_set1_post">instructions.html</Task>
+		<Task id="instructions_d_set1_post">instructions.html</Task>	
+		<Task id="instructions_c_set2_post">instructions_set2.html</Task>
+		<Task id="instructions_d_set2_post">instructions_set2.html</Task>	
+
+		<!-- Control Condition -->
+		<Task id="control">control.html</Task>
+		
+		<!-- Counter --> 
+		<Task id="counter1">counter1.html</Task>
+		<Task id="counter2">counter2.html</Task>		
+		<Task id="counter3" file="counter3.xml">iattask_counter.jsp</Task>
+
+		<!-- Dodgeball --> 
+		<Task id="dodge1">dodge1.html</Task>
+		<Task id="dodge2">dodge2.html</Task>
+		<Task id="dodge3">dodge3.html</Task>
+		<Task id="dodge4">dodge4.html</Task>
+		<Task id="dodge5">dodge5.html</Task>
+		<Task id="dodge6">dodge6.html</Task>
+		<Task id="dodge7">dodge7.html</Task>
+		<Task id="dodge8">dodge8.html</Task>
+		<Task id="dodge9">dodge9.html</Task>
+		<Task id="dodge10">dodge10.html</Task>
+		<Task id="dodge11">dodge11.html</Task>
+		<Task id="dodge12">dodge12.html</Task>
+		<Task id="dodge13">dodge13.html</Task>
+		<Task id="dodge14">dodge14.html</Task>
+		<Task id="dodge15">dodge15.html</Task>
+		<Task id="dodge16">dodge16.html</Task>
+		<Task id="dodge17">dodge17.html</Task>
+		<Task id="dodge18">dodge18.html</Task>
+		<Task id="dodge19">dodge19.html</Task>
+		<Task id="dodge20">dodge20.html</Task>
+		<Task id="dodge21">dodge21.html</Task>
+		<Task id="dodge22">dodge22.html</Task>
+		<Task id="dodge23">dodge23.html</Task>
+		<Task id="dodge24">dodge24.html</Task>
+		<Task id="dodge25">dodge25.html</Task>
+		<Task id="dodge26">dodge26.html</Task>
+		<Task id="dodge27">dodge27.html</Task>
+		<Task id="dodge28">dodge28.html</Task>
+		<Task id="dodge29">dodge29.html</Task>
+		<Task id="dodge30">dodge30.html</Task>
+		<Task id="dodge31">dodge31.html</Task>
+		<Task id="dodge32">dodge32.html</Task>
+		<Task id="dodge33">dodge33.html</Task>
+		<Task id="dodge34">dodge34.html</Task>
+		<Task id="dodge35">dodge35.html</Task>
+		<Task id="dodge36">dodge36.html</Task>
+		<Task id="dodge37">dodge37.html</Task>
+		<Task id="dodge38">dodge38.html</Task>
+		<Task id="dodge39">dodge39.html</Task>
+		<Task id="dodge40">dodge40.html</Task>
+		<Task id="dodge41">dodge41.html</Task>
+		<Task id="dodge42">dodge42.html</Task>
+		<Task id="dodge43">dodge43.html</Task>
+		
+		<!-- Evaluative Conditioning -->
+		<Task id="evalcond1">evalcond1.htm</Task>
+		<Task id="evalcond2">evalcond2.htm</Task>
+		<Task id="evalcond3">evalcond3.htm</Task>		
+		<Task id="evalcond4" file="evalcond4.xml">/common/en-us/html/spfdbl3.jsp</Task>
+		<Task id="evalcond5">evalcond5.html</Task>		
+		
+		<!-- Faking -->
+		<Task id="fake3">fake3.html</Task>
+		<Task id="fake4">fake4.html</Task>
+		<Task id="fake5">fake5.html</Task>
+		<Task id="fake6">fake6.html</Task>	
+		
+		<!-- GNAT -->
+		<Task id="gnat1">gnat1.html</Task>
+		<Task id="gnat2" file="gnat2.xml">gnattask_gnat.jsp</Task>
+		<Task id="gnat3">gnat3.html</Task>
+		<Task id="gnat4" file="gnat4.xml">gnattask_gnat.jsp</Task>
+		<Task id="gnat5">gnat5.html</Task>		
+		<Task id="gnat6" file="gnat6.xml">gnattask_gnat.jsp</Task>	
+		<Task id="gnat7">gnat7.htm</Task>	
+		
+			<!-- Implementation Intentions -->
+		<Task id="implement3">implement3.html</Task>
+		<Task id="implement4">implement4.html</Task>
+		<Task id="implement5">implement5.html</Task>
+		<Task id="implement6">implement6.html</Task>	
+				
+		<!-- Multiculturalism -->
+		<Task id="overcome1">overcome1.html</Task>
+		<Task id="overcome2">overcome2.html</Task>
+		<Task id="overcome3">overcome3.html</Task>	
+		
+		<!-- Scenario -->	
+		<Task id="scenario1">scenario1.html</Task>
+		<Task id="scenario2">scenario2.html</Task>		
+		<Task id="scenario3">scenario3.html</Task>	
+		
+			<!-- Survivor -->
+		<Task id="survivor1">survivor1.html</Task>
+		<Task id="survivor2">survivor2.html</Task>
+		<Task id="survivor3">survivor3.html</Task>
+		<Task id="survivor4">survivor4.html</Task>
+		<Task id="survivor5">survivor5.html</Task>
+		<Task id="survivor6">survivor6.html</Task>
+		<Task id="survivor7">survivor7.html</Task>
+		<Task id="survivor8">survivor8.html</Task>
+		<Task id="survivor9">survivor9.html</Task>
+		<Task id="survivor10">survivor10.html</Task>
+		<Task id="survivor11">survivor11.html</Task>
+		<Task id="survivor12">survivor12.html</Task>
+		<Task id="survivor13">survivor13.html</Task>	
+		</Definitions>
+		
+		<Map>
+		<Task id="startpage"/>
+		<Task id="consent"/>	
+		<Task id="serial"/>
+		<Task id="sendemail"/>	
+		<Task id="emailresearcher"/>
+		
+		<Task id="realstart"/>
+		<Branch type="script" id="preiat"/>
+		
+		<Branch type ="group" select="1" id="condition">
+			<Branch type="group" id = "counter">			
+				<Task id="counter1"/>
+				<Task id="counter2"/>
+				<Task id="counter3"/>
+			</Branch>
+			
+			<Branch type="group" id = "evalcond">
+				<Task id="evalcond1"/>
+				<Task id="evalcond2"/>
+				<Task id="evalcond3"/>
+				<Task id="evalcond4"/>		
+				<Task id="evalcond5"/>					
+			</Branch>
+				
+			<Branch type="group" id = "fake">
+				<Task id="fake3"/>
+				<Task id="fake4"/>			
+				<Task id="fake5"/>
+				<Task id="fake6"/>
+			</Branch>	
+			
+			<Branch type="group" id = "implement">			
+				<Task id="implement3"/>
+				<Task id="implement4"/>			
+				<Task id="implement5"/>
+				<Task id="implement6"/>
+			</Branch>	
+			
+			<Branch type="group" id = "overcome">
+				<Task id="overcome1"/>
+				<Task id="overcome2"/>
+				<Task id="overcome3"/>				
+			</Branch>				
+
+			<Branch type="group" id = "scenario">
+				<Task id="scenario1"/>
+				<Task id="scenario2"/>
+				<Task id="scenario3"/>
+			</Branch>	
+
+			<Branch type="group" id = "gnat">
+				<Task id="gnat1"/>
+				<Task id="gnat2"/>
+				<Task id="gnat3"/>
+				<Task id="gnat4"/>
+				<Task id="gnat5"/>
+				<Task id="gnat6"/>
+				<Task id="gnat7"/>
+			</Branch>	
+			
+			<Branch type="group" id = "dodge">		
+			    <Task id="dodge1"/>
+				<Task id="dodge2"/>
+				<Task id="dodge3"/>
+				<Task id="dodge4"/>
+				<Task id="dodge5"/>
+				<Task id="dodge6"/>
+				<Task id="dodge7"/>
+				<Task id="dodge8"/>
+				<Task id="dodge9"/>
+				<Task id="dodge10"/>
+				<Task id="dodge11"/>
+				<Task id="dodge12"/>
+				<Task id="dodge13"/>
+				<Task id="dodge14"/>
+				<Task id="dodge15"/>
+				<Task id="dodge16"/>
+				<Task id="dodge17"/>
+				<Task id="dodge18"/>
+				<Task id="dodge19"/>
+				<Task id="dodge20"/>
+				<Task id="dodge21"/>
+				<Task id="dodge22"/>
+				<Task id="dodge23"/>
+				<Task id="dodge24"/>
+				<Task id="dodge25"/>
+				<Task id="dodge26"/>
+				<Task id="dodge27"/>
+				<Task id="dodge28"/>
+				<Task id="dodge29"/>
+				<Task id="dodge30"/>
+				<Task id="dodge31"/>
+				<Task id="dodge32"/>
+				<Task id="dodge33"/>
+				<Task id="dodge34"/>
+				<Task id="dodge35"/>
+				<Task id="dodge36"/>
+				<Task id="dodge37"/>
+				<Task id="dodge38"/>
+				<Task id="dodge39"/>
+				<Task id="dodge40"/>
+				<Task id="dodge41"/>
+				<Task id="dodge42"/>
+				<Task id="dodge43"/>
+			</Branch>	
+			
+			<Branch type="group" id="survivor">
+				<Task id="survivor1" />	
+				<Task id="survivor2" />		
+				<Task id="survivor3" />						
+				<Task id="survivor5"/>
+				<Task id="survivor4"/>
+				<Task id="survivor9"/>
+				<Task id="survivor6"/>
+				<Task id="survivor7"/>
+				<Task id="survivor8"/>
+				<Task id="survivor10"/>
+				<Task id="survivor11"/>
+				<Task id="survivor12"/>
+				<Task id="survivor13"/>
+			</Branch>	
+				
+			<Branch type="group" id="control_group">
+				<Task id="control"/>		
+			</Branch>	
+				
+		</Branch>	
+	
+		<Branch type="script" id="postiat"/>
+
+		<Task id="questionnaire"/>	
+		<Task id="demographics"/>			
+		<Task id="lastpage"/>
+		<Task id="debriefing"/>
+	</Map>
+</Study>
