@@ -245,10 +245,10 @@
 		<Task id="sendemail3"/>	
 		<Task id="sendemail4"/>	
 		<Task id="sendemail5"/>	
-		<Task id="sendemail6"/>	
+		<Task id="sendemail6"/>	-->
 		<Task id="sendemail7"/>	
 		<Task id="sendemail8"/>	
-		<Task id="sendemail9"/>	
+		<Task id="sendemail9"/>	-->
 		
 		<Task id="realstart"/>
 		<Branch type="script" id="preiat"/>
