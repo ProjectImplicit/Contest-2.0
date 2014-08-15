@@ -13,7 +13,8 @@
 		<Task id="labend">labend.html</Task>
 		<Task id="serial">serial_t1.html</Task>
 		<Task id="sendemail">sendemail_uvalai.jsp</Task>
-
+		<Task id="emailresearcher">emailresearcher_t1uvalai.jsp</Task>
+		
 		<!--Scripting for Pretest IAT-->
 		<Branch type="script" id="preiat">
 			s = get("realstart");
@@ -235,6 +236,7 @@
 		<Task id="subjnum"/>	
 		<Task id="serial"/>
 		<Task id="sendemail"/>	
+		<Task id="emailresearcher"/>		
 		
 		<Task id="realstart"/>
 		<Branch type="script" id="preiat"/>

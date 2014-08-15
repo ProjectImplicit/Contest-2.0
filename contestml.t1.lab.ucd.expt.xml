@@ -1,26 +1,20 @@
-<Study id="calvin.contestml.t1" datagroup="research"> 
+<Study id="calvin.contestml.t1ucd" datagroup="research"> 
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
-		<Task id="consent">consent.htm</Task>
+		<Task id="rasurvey">rasurvey.html</Task>
+		<Task id="subjnum">subjnum.html</Task>		
 		<Task id="realstart">realstartskip.jsp</Task>
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
 		<Task id="lastpage">lastpage.html</Task>
-		<Task id="debriefing">debriefing_t1.jsp</Task>
+		<Task id="debriefing">debriefing_t1lab.html</Task>
+		<Task id="raissues">raissues.html</Task>
+		<Task id="labend">labend.html</Task>
 		<Task id="serial">serial_t1.html</Task>
-		<Task id="sendemail1">sendemail_uvaaxt.jsp</Task>
-		<Task id="sendemail2">sendemail_ucd.jsp</Task>
-		<Task id="sendemail3">sendemail_nyu.jsp</Task>
-		<Task id="sendemail4">sendemail_ufl.jsp</Task>
-		<Task id="sendemail5">sendemail_iu.jsp</Task><!--
-		<Task id="sendemail6">sendemail_yaleroussos.jsp</Task>
-		<Task id="sendemail7">sendemail.jsp</Task>
-		<Task id="sendemail8">sendemail_purdue.jsp</Task>
-		<Task id="sendemail9">sendemail_uvalai.jsp</Task> -->
-
-
-
+		<Task id="sendemail">sendemail_ucd.jsp</Task>
+		<Task id="emailresearcher">emailresearcher_t1ucd.jsp</Task>
+		
 		<!--Scripting for Pretest IAT-->
 		<Branch type="script" id="preiat">
 			s = get("realstart");
@@ -238,17 +232,11 @@
 		
 		<Map>
 		<Task id="startpage"/>
-		<Task id="consent"/>	
+		<Task id="rasurvey"/>
+		<Task id="subjnum"/>	
 		<Task id="serial"/>
-		<Task id="sendemail1"/>	
-		<Task id="sendemail2"/>	
-		<Task id="sendemail3"/>	
-		<Task id="sendemail4"/>	
-		<Task id="sendemail5"/>	<!--
-		<Task id="sendemail6"/>	
-		<Task id="sendemail7"/>	
-		<Task id="sendemail8"/>	
-		<Task id="sendemail9"/>	-->
+		<Task id="sendemail"/>	
+		<Task id="emailresearcher"/>		
 		
 		<Task id="realstart"/>
 		<Branch type="script" id="preiat"/>
@@ -378,5 +366,7 @@
 		<Task id="demographics"/>			
 		<Task id="lastpage"/>
 		<Task id="debriefing"/>
-	</Map>
+		<Task id="raissues"/>
+		<Task id="labend"/>
+		</Map>
 </Study>

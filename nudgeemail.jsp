@@ -95,10 +95,9 @@
 		
 		
 		// variables for researchers to edit
-		String [][] infoArray={{"calvin.contestml.t1tualne","calvin.contestml.t2tulan","Stefanie Simon <ssimon3@tulane.edu>","/user/calvin/contestml/nudgeemail_uva.html"},
-	{"calvin.contestml.t1unc","calvin.contestml.t2","Erin Cooley <ecooley@live.unc.edu>","/user/calvin/contestml/nudgeemail_uva.html"},
+		String [][] infoArray={{"calvin.contestml.t1","calvin.contestml.t2","Erin Cooley <ecooley@live.unc.edu>","/user/calvin/contestml/nudgeemail_uva.html"},
 	{"calvin.contestml.t1purdue","calvin.contestml.t2","Mason Burns <burns47@purdue.edu>","/user/calvin/contestml/nudgeemail_uva.txt"},	
-	};
+	{"calvin.contestml.t1","calvin.contestml.t2","Calvin Lai <ecooley@live.unc.edu>","/user/calvin/contestml/nudgeemail_uva.txt"}};
 	 	ArrayList <String>sentEmails=new ArrayList <String>();
 		int numberOfEmailsSent=0;
 		String errors="";
@@ -267,7 +266,7 @@ String oldEmail;
 		//DelayedMail researcherMail=new DelayedMail(delay, fromAddress, emailFile, fromAddress,"total_emails_sent:"+numberOfEmailsSent);
 		//new Thread(researcherMail).start();
  %>
- <h2 align="center">Querry Results</h2>
+ <h2 align="center">Query Results</h2>
 <p align="center">
 	
 	

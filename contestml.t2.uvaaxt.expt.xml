@@ -1,4 +1,4 @@
-<Study id="calvin.contestml.t2" datagroup="research"> 
+<Study id="calvin.contestml.t2uvaaxt" datagroup="research"> 
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
@@ -12,7 +12,7 @@
 		<Task id="lastpage">lastpage.html</Task>
 		<Task id="debriefing">debriefing_t2.jsp</Task>
 		<Task id="serial">serial_t2.html</Task>
-		<Task id="emailresearcher">emailresearcher_t2.jsp</Task>
+		<Task id="emailresearcher">emailresearcher_t2uvaaxt.jsp</Task>
 
 		<!-- Instructions -->
 		<Task id="instructions_c_set1_post">instructions.html</Task>
