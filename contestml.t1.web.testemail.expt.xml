@@ -2,18 +2,18 @@
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
-		<Task id="consent">consent.htm</Task>
+		<Task id="consent">consent.html</Task>
 		<Task id="realstart">realstartskip.jsp</Task>
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
 		<Task id="lastpage">lastpage.html</Task>
 		<Task id="debriefing">debriefing_t1.jsp</Task>
 		<Task id="serial">serial_t1.html</Task>
-		<Task id="sendemail1">sendemail_uvaaxt.jsp</Task>
-		<Task id="sendemail2">sendemail_ucd.jsp</Task>
-		<Task id="sendemail3">sendemail_nyu.jsp</Task>
-		<Task id="sendemail4">sendemail_ufl.jsp</Task>
-		<Task id="sendemail5">sendemail_iu.jsp</Task><!--
+		<Task id="sendemail1">sendemail_iona.jsp</Task> <!--
+		<Task id="sendemail2">sendemail_ut.jsp</Task>
+		<Task id="sendemail3">sendemail_sb.jsp</Task>
+		<Task id="sendemail4">sendemail_vcu.jsp</Task>
+		<Task id="sendemail5">sendemail_iu.jsp</Task>
 		<Task id="sendemail6">sendemail_yaleroussos.jsp</Task>
 		<Task id="sendemail7">sendemail.jsp</Task>
 		<Task id="sendemail8">sendemail_purdue.jsp</Task>
@@ -240,11 +240,11 @@
 		<Task id="startpage"/>
 		<Task id="consent"/>	
 		<Task id="serial"/>
-		<Task id="sendemail1"/>	
+		<Task id="sendemail1"/>	<!--
 		<Task id="sendemail2"/>	
 		<Task id="sendemail3"/>	
 		<Task id="sendemail4"/>	
-		<Task id="sendemail5"/>	<!--
+		<Task id="sendemail5"/>	
 		<Task id="sendemail6"/>	
 		<Task id="sendemail7"/>	
 		<Task id="sendemail8"/>	

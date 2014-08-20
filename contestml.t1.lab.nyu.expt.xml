@@ -7,7 +7,7 @@
 		<Task id="realstart">realstartskip.jsp</Task>
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
-		<Task id="lastpage">lastpage.html</Task>
+		<Task id="lastpage">lastpage_lab.html</Task>
 		<Task id="debriefing">debriefing_t1lab.html</Task>
 		<Task id="raissues">raissues.html</Task>
 		<Task id="labend">labend.html</Task>

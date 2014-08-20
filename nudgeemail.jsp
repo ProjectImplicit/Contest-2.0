@@ -95,9 +95,27 @@
 		
 		
 		// variables for researchers to edit
-		String [][] infoArray={{"calvin.contestml.t1","calvin.contestml.t2","Erin Cooley <ecooley@live.unc.edu>","/user/calvin/contestml/nudgeemail_uva.html"},
-	{"calvin.contestml.t1purdue","calvin.contestml.t2","Mason Burns <burns47@purdue.edu>","/user/calvin/contestml/nudgeemail_uva.txt"},	
-	{"calvin.contestml.t1","calvin.contestml.t2","Calvin Lai <ecooley@live.unc.edu>","/user/calvin/contestml/nudgeemail_uva.txt"}};
+		String [][] infoArray={
+	{"calvin.contestml.t1uvalai","calvin.contestml.t2uvalai","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_uvalai.html"},
+	{"calvin.contestml.t1uvaaxt","calvin.contestml.t2uvaaxt","Jordan Axt<jra3ee@virginia.edu>","/user/calvin/contestml/nudgeemail_uvaaxt.html"},	
+	{"calvin.contestml.t1hms","calvin.contestml.t2hms","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_hms.html"},
+	{"calvin.contestml.t1iona","calvin.contestml.t2iona","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_iona.html"},
+	{"calvin.contestml.t1nyu","calvin.contestml.t2nyu","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_nyu.html"},
+	{"calvin.contestml.t1purdue","calvin.contestml.t2purdue","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_purdue.html"},
+	{"calvin.contestml.t1rumclean","calvin.contestml.t2rumclean","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_rumclean.html"},
+	{"calvin.contestml.t1sb","calvin.contestml.t2sb","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_sb.html"},
+	{"calvin.contestml.t1sdsu","calvin.contestml.t2sdsu","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_sdsu.html"},
+	{"calvin.contestml.t1tulane","calvin.contestml.t2tulane","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_tulane.html"},
+	{"calvin.contestml.t1ua","calvin.contestml.t2ua","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_ua.html"},
+	{"calvin.contestml.t1ucd","calvin.contestml.t2ucd","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_ucd.html"},
+	{"calvin.contestml.t1ufl","calvin.contestml.t2ufl","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_ufl.html"},
+	{"calvin.contestml.t1wisc","calvin.contestml.t2wisc","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_wisc.html"},
+	{"calvin.contestml.t1un","calvin.contestml.t2un","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_un.html"},
+	{"calvin.contestml.t1unc","calvin.contestml.t2unc","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_unc.html"},
+	{"calvin.contestml.t1ut","calvin.contestml.t2ut","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_ut.html"},
+	{"calvin.contestml.t1vcu","calvin.contestml.t2vcu","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_vcu.html"},
+	{"calvin.contestml.t1yaleroussos","calvin.contestml.t2yaleroussos","Calvin Lai <clai@virginia.edu>","/user/calvin/contestml/nudgeemail_yaleroussos.html"},
+	};
 	 	ArrayList <String>sentEmails=new ArrayList <String>();
 		int numberOfEmailsSent=0;
 		String errors="";
@@ -112,8 +130,8 @@
 		String emailQuestionName="email";  // the question ID that has the email address
 		String emailSubject="Reminder: Follow-up Session for Psychology Study";
 		int delay=1;   //miliseconds
-		int startDaysOld=10;  //how many days back to go for sending reminder emails
-		int totalDays=9;  //how many total days.  There is no way currently to send to people who finished task 1 on hte current day.  DO NOT make totaldays bigger than startDaysOld
+		int startDaysOld=request.getParameter("startthismanydaysago");  //how many days back to go for sending reminder emails
+		int totalDays=request.getParameter("thismanydaystowardstoday");  //how many total days.  There is no way currently to send to people who finished task 1 on hte current day.  DO NOT make totaldays bigger than startDaysOld
 		String password="2ENCc3ssZt5jFTk";
 		// end of researcher section
 		
@@ -144,8 +162,8 @@ ResultSet rs=null;
  		 conn = ConnectionPool.getConnection("research");
 
  		int resultCount = 0;
-//ps = conn.prepareStatement("select SESSION_ID from yuiat_sessions_v where study_name = ? and SESSION_STATUS='C' AND SESSION_DATE >=trunc(sysdate-"+startDaysOld+") and session_date<trunc(sysdate-"+(startDaysOld-totalDays)+")");
-ps = conn.prepareStatement("select SESSION_ID from yuiat_sessions_v where study_name = ? and SESSION_STATUS='C'");
+ps = conn.prepareStatement("select SESSION_ID from yuiat_sessions_v where study_name = ? and SESSION_STATUS='C' AND SESSION_DATE >=trunc(sysdate-"+startDaysOld+") and session_date<trunc(sysdate-"+(startDaysOld-totalDays)+")");
+//ps = conn.prepareStatement("select SESSION_ID from yuiat_sessions_v where study_name = ? and SESSION_STATUS='C'");
  		ps.setString(1, firstStudyId);
  		
 // 			ps = conn.prepareStatement("select session_id from yuiat_sessions_v where study_name = ? and SESSION_DATE >=trunc(sysdate-"+startDaysOld+")");

@@ -2,7 +2,7 @@
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
-		<Task id="consent">consent.htm</Task>
+		<Task id="consent">consent.html</Task>
 		<Task id="lastpage">lastpage.html</Task>
 		<Task id="debriefing">debriefing_t1.jsp</Task>
 

@@ -7,12 +7,12 @@
 		<Task id="realstart">realstartskip.jsp</Task>
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
-		<Task id="lastpage">lastpage.html</Task>
-		<Task id="debriefing">debriefing_t1lab.html</Task>
+		<Task id="lastpage">lastpage_lab.html</Task>
+		<Task id="debriefing">debriefing_t1labonly.html</Task>
 		<Task id="raissues">raissues.html</Task>
 		<Task id="labend">labend.html</Task>
-		<Task id="serial">serial_t1.html</Task>
-		<Task id="sendemail">sendemail_iu.jsp</Task>
+		<Task id="serial">serial_t1.html</Task> <!--
+		<Task id="sendemail">sendemail_iu.jsp</Task> -->
 		<Task id="emailresearcher">emailresearcher_t1iu.jsp</Task>
 
 		<!--Scripting for Pretest IAT-->
@@ -234,8 +234,8 @@
 		<Task id="startpage"/>
 		<Task id="rasurvey"/>
 		<Task id="subjnum"/>	
-		<Task id="serial"/>
-		<Task id="sendemail"/>	
+		<Task id="serial"/> <!--
+		<Task id="sendemail"/>	-->
 		<Task id="emailresearcher"/>		
 		
 		<Task id="realstart"/>
