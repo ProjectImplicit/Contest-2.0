@@ -1,0 +1,57 @@
+<Study id="calvin.contestml.t2uvaw" datagroup="research"> 
+	<Definitions>
+		<!-- Core Files -->
+		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+		<Task id="t2intro">t2intro.html</Task>
+		<Task id="5b_iatc_set1_post2" file="5b_racec_set1_post2.xml">/common/en-us/html/iattask6.jsp</Task>
+		<Task id="5b_iatd_set1_post2" file="5b_raced_set1_post2.xml">/common/en-us/html/iattask6.jsp</Task>
+		<Task id="5b_iatc_set2_post2" file="5b_racec_set2_post2.xml">iattask_set2.jsp</Task>
+		<Task id="5b_iatd_set2_post2" file="5b_raced_set2_post2.xml">iattask_set2.jsp</Task>
+		<Task id="questionnaire">questionnaire.jsp</Task>
+		<Task id="motivation">motivation.jsp</Task>
+		<Task id="lastpage">lastpage.html</Task>
+		<Task id="debriefing">debriefing_t2.jsp</Task>
+		<Task id="serial">serial_t2.html</Task>
+		<Task id="emailresearcher">emailresearcher_t2uvaw.jsp</Task>
+
+		<!-- Instructions -->
+		<Task id="instructions_c_set1_post">instructions.html</Task>
+		<Task id="instructions_d_set1_post">instructions.html</Task>	
+		<Task id="instructions_c_set2_post">instructions_set2.html</Task>
+		<Task id="instructions_d_set2_post">instructions_set2.html</Task>	
+		</Definitions>
+		
+		<Map>
+		<Task id="startpage"/>
+		<Task id="t2intro"/>		
+		<Task id="serial"/>
+		<Task id="emailresearcher"/>
+
+		<Branch type="group" select="1" id="random">
+			<Branch type="group" id="5b_iatc_set1_post_group">
+				<Task id="instructions_c_set1_post"/>
+				<Task id="5b_iatc_set1_post2"/>
+			</Branch>
+
+			<Branch type="group" id="5b_iatd_set1_post_group">
+				<Task id="instructions_d_set1_post"/>
+				<Task id="5b_iatd_set1_post2"/>
+			</Branch>
+			
+			<Branch type="group" id="5b_iatc_set2_post_group">
+				<Task id="instructions_c_set2_post"/>
+				<Task id="5b_iatc_set2_post2"/>
+			</Branch>
+
+			<Branch type="group" id="5b_iatd_set2_post_group">
+				<Task id="instructions_d_set2_post"/>
+				<Task id="5b_iatd_set2_post2"/>
+			</Branch>
+		</Branch>
+			
+		<Task id="questionnaire"/>	
+		<Task id="motivation"/>			
+		<Task id="lastpage"/>
+		<Task id="debriefing"/>
+	</Map>
+</Study>

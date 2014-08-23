@@ -1,0 +1,18 @@
+<Study id="calvin.contestml.t1nyu" datagroup="research"> 
+	<Definitions>
+		<!-- Core Files -->
+		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+		<Task id="realstart">realstartskip.jsp</Task>
+		<Task id="lastpage">lastpage.html</Task>
+		<Task id="debriefing">debriefing_t1.jsp</Task>
+		<Task id="serial">serial_test.html</Task>
+		</Definitions>
+		
+		<Map>
+		<Task id="startpage"/>
+		<Task id="serial"/>
+		<Task id="realstart"/>	
+		<Task id="lastpage"/>
+		<Task id="debriefing"/>
+	</Map>
+</Study>
