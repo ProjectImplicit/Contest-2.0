@@ -1,7 +1,7 @@
 <%
 String props = request.getParameter("p");
 if (props == null)
-	props = "/implicit/user/calvin/contestml/default_set2.xml";
+	props = "/implicit/user/calvin/conml/default_set2.xml";
 
 String resource = request.getParameter("r");
 if (resource == null)

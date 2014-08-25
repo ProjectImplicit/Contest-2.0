@@ -52,7 +52,7 @@
 
 	<arg name="STIM_DELAY">250</arg>
 
-	<arg name="IMAGE_URL">/implicit/user/calvin/contestml/images/</arg>
+	<arg name="IMAGE_URL">/implicit/user/calvin/conml/images/</arg>
 
 	<arg name="POST_URL">/implicit/AS</arg>
 
