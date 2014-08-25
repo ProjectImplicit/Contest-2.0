@@ -115,7 +115,6 @@
 	{"calvin.contestml.t1ut","calvin.contestml.t2ut","Xiaoqing Hu <xqhu@utexas.edu>","/user/calvin/contestml/nudgeemail_ut.html"},
 	{"calvin.contestml.t1vcu","calvin.contestml.t2vcu","Jennifer Joy-Gaba <jjoygaba@vcu.edu>","/user/calvin/contestml/nudgeemail_vcu.html"},
 	{"calvin.contestml.t1yaleroussos","calvin.contestml.t2yaleroussos","Gina Roussos <gina.roussos@yale.edu>","/user/calvin/contestml/nudgeemail_yaleroussos.html"},
-	
 	{"calvin.contestml.t1rurubinstein","calvin.contestml.t2rurubinstein","Rachel Rubinstein <rachrubi@scarletmail.rutgers.edu>","/user/calvin/contestml/nudgeemail_rurubinstein.html"},
 	{"calvin.contestml.t1uvaw","calvin.contestml.t2uvaw","Kathleen Schmidt <kes7z@uvawise.edu>","/user/calvin/contestml/nudgeemail_uvaw.html"},
 	{"calvin.contestml.t1uci","calvin.contestml.t2uci","Chris Marshburn <c.marshburn@uci.edu>","/user/calvin/contestml/nudgeemail_uci.html"},
