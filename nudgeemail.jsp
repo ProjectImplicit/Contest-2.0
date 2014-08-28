@@ -28,8 +28,9 @@
 		String toEmail1;
 		String subject;
 		String bodyFile;
+		String replace;
 		 int delay;
-		 
+		 static final String REPLACE_STRING="#SID";
 		 String readFile( String file ) throws Exception {
 		    BufferedReader reader = new BufferedReader( new FileReader (file));
 		    String         line = null;
@@ -44,13 +45,14 @@
 		    return stringBuilder.toString();
 		}
 		 
-		 SendEmail(String from,String to, String subject, String body, int delay)
+		 SendEmail(String from,String to, String subject, String body, int delay, String replace)
 		 {
 			 fromEmail=from;
 			 toEmail1=to;
 			 this.subject=subject;
 			 bodyFile=body;
 			 this.delay=delay;
+			 this.replace=replace;
 			
 		 }
 	      public void run() {
@@ -64,7 +66,8 @@
 	  	 bodyText=readFile(Implicit.REALPATH+bodyFile);}
 		 catch(Exception e)
 		 {}
-		 bodyText.replaceAll("\n", "");
+		
+		bodyText=  bodyText.replace(REPLACE_STRING, replace);
 
 	  		 try{
 	  	    Properties props = new Properties();
@@ -256,7 +259,7 @@ String oldEmail;
  			ps.close();
  			rs.close();
 			if(oldEmail!=null && !oldEmail.equals("") && !oldEmail.contains("darusame@gmail.com") ){
-				SendEmail test= new SendEmail(fromAddress,oldEmail,emailSubject,emailFile,1);
+				SendEmail test= new SendEmail(fromAddress,oldEmail,emailSubject,emailFile,1,participantId);
 				Thread t = new Thread(test);
 				t.start();
 			numberOfEmailsSent++;

@@ -8,7 +8,7 @@
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
 		<Task id="lastpage">lastpage_lab.html</Task>
-		<Task id="debriefing">debriefing_t1labonly.html</Task>
+		<Task id="debriefing">debriefing_t1labumass.html</Task>
 		<Task id="raissues">raissues.html</Task>
 		<Task id="labend">labend.html</Task>
 		<Task id="serial">serial_t1.html</Task> <!--

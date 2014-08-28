@@ -12,7 +12,7 @@
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="motivation">motivation.jsp</Task>
 		<Task id="lastpage">lastpage.html</Task>
-		<Task id="debriefing">debriefing_t2lab.html</Task>
+		<Task id="debriefing">debriefing_t2labmass.html</Task>
 		<Task id="raissues">raissues.html</Task>
 		<Task id="labend">labend.html</Task>>
 		<Task id="serial">serial_t2.html</Task> <!--

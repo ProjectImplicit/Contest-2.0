@@ -9,7 +9,7 @@
 		<Task id="lastpage">lastpage.html</Task>
 		<Task id="debriefing">debriefing_t1.jsp</Task>
 		<Task id="serial">serial_t1.html</Task>
-		<Task id="sendemail">sendemail_sb.jsp</Task>
+		<Task id="sendemail">sendemail_hms.jsp</Task>
 		<Task id="emailresearcher">emailresearcher_t1hms.jsp</Task>
 
 		<!--Scripting for Pretest IAT-->
