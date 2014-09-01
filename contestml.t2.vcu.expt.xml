@@ -12,7 +12,7 @@
 		<Task id="lastpage">lastpage.html</Task>
 		<Task id="debriefing">debriefing_t2.jsp</Task>
 		<Task id="serial">serial_t2.html</Task>
-		<Task id="emailresearcher">emailresearcher_t2vcu.jsp</Task>
+		<Task id="emailresearcherpay">emailresearcher_t2vcupay.jsp</Task>
 
 		<!-- Instructions -->
 		<Task id="instructions_c_set1_post">instructions.html</Task>
@@ -25,7 +25,6 @@
 		<Task id="startpage"/>
 		<Task id="t2intro"/>		
 		<Task id="serial"/>
-		<Task id="emailresearcher"/>
 
 		<Branch type="group" select="1" id="random">
 			<Branch type="group" id="5b_iatc_set1_post_group">
@@ -50,7 +49,8 @@
 		</Branch>
 			
 		<Task id="questionnaire"/>	
-		<Task id="motivation"/>			
+		<Task id="motivation"/>
+		<Task id="emailresearcherpay"/>		
 		<Task id="lastpage"/>
 		<Task id="debriefing"/>
 	</Map>
