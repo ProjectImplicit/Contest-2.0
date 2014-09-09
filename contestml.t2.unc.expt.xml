@@ -12,7 +12,8 @@
 		<Task id="lastpage">lastpage.html</Task>
 		<Task id="debriefing">debriefing_t2unc.jsp</Task>
 		<Task id="serial">serial_t2.html</Task>
-		<Task id="emailresearcher">emailresearcher_t2unc.jsp</Task>
+		<Task id="sona">sonaunc_t2.html</Task>
+		<Task id="sonaresearcher">sonaresearcher_t2unc.jsp</Task>
 
 		<!-- Instructions -->
 		<Task id="instructions_c_set1_post">instructions.html</Task>
@@ -24,8 +25,10 @@
 		<Map>
 		<Task id="startpage"/>
 		<Task id="t2intro"/>		
+		<Task id="sona"/>
+		<Task id="sonaresearcher"/>
 		<Task id="serial"/>
-		<Task id="emailresearcher"/>
+
 
 		<Branch type="group" select="1" id="random">
 			<Branch type="group" id="5b_iatc_set1_post_group">

@@ -2,13 +2,14 @@
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+		<Task id="consent">consent.html</Task>
 		<Task id="rasurvey">rasurvey.html</Task>
 		<Task id="subjnum">subjnum.html</Task>		
 		<Task id="realstart">realstartskip.jsp</Task>
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
 		<Task id="lastpage">lastpage_lab.html</Task>
-		<Task id="debriefing">debriefing_t1lab.html</Task>
+		<Task id="debriefing">debriefing_t1labuvalai.html</Task>
 		<Task id="raissues">raissues.html</Task>
 		<Task id="labend">labend.html</Task>
 		<Task id="serial">serial_t1.html</Task>
@@ -234,6 +235,7 @@
 		<Task id="startpage"/>
 		<Task id="rasurvey"/>
 		<Task id="subjnum"/>	
+		<Task id="consent"/>
 		<Task id="serial"/>
 		<Task id="sendemail"/>	
 		<Task id="emailresearcher"/>		

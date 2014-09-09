@@ -10,6 +10,7 @@
 		<Task id="debriefing">debriefing_t1.jsp</Task>
 		<Task id="serial">serial_t1.html</Task>
 		<Task id="sendemail">sendemail_vcu.jsp</Task>
+		<Task id="emailresearcher">emailresearcher_t1vcu.jsp</Task>
 
 		<!--Scripting for Pretest IAT-->
 		<Branch type="script" id="preiat">
@@ -231,6 +232,7 @@
 		<Task id="consent"/>	
 		<Task id="serial"/>
 		<Task id="sendemail"/>	
+		<Task id="emailresearcher"/>
 		
 		<Task id="realstart"/>
 		<Branch type="script" id="preiat"/>

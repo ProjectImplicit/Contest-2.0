@@ -10,7 +10,8 @@
 		<Task id="debriefing">debriefing_t1.jsp</Task>
 		<Task id="serial">serial_t1.html</Task>
 		<Task id="sendemail">sendemail_unc.jsp</Task>
-		<Task id="emailresearcher">emailresearcher_t1unc.jsp</Task>
+		<Task id="sona">sonaunc_t1.html</Task>
+		<Task id="sonaresearcher">sonaresearcher_t1unc.jsp</Task>
 
 		<!--Scripting for Pretest IAT-->
 		<Branch type="script" id="preiat">
@@ -229,10 +230,11 @@
 		
 		<Map>
 		<Task id="startpage"/>
-		<Task id="consent"/>	
+		<Task id="consent"/>
+		<Task id="sona"/>
+		<Task id="sonaresearcher"/>
 		<Task id="serial"/>
 		<Task id="sendemail"/>	
-		<Task id="emailresearcher"/>
 		
 		<Task id="realstart"/>
 		<Branch type="script" id="preiat"/>

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+ 
+    <title>Psychology Participant Pool ID</title>
+   
+<script language="javascript" type="text/javascript" src="/implicit/common/en-us/js/dynamicoptionlist.js"></script>
+<script language="javascript" type="text/javascript" src="/implicit/common/en-us/js/task.js"></script>
+<script type="text/javascript">
+
+
+function validate_email(str)
+{
+
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		    return false;
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+
+		    return false;
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+
+		    return false;
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    return false;
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    return false;
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    return false;
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    return false;
+		 }
+return true;  //can have code here to check that email format is correct
+}
+function validate_form()
+{
+    if(document.FormOne.sona.value!=document.FormOne.sona2.value)
+  {
+  document.FormOne.sona.focus();
+  alert("The Psychology Participant Pool IDs do not match");
+  return false;
+  }
+  
+  return true;
+}
+</script>
+</head>
+<body  >
+    <center>
+<br />
+<form method="post" name="FormOne" id="FormOne" action="/implicit/Study">
+<input type="hidden" name="mode" value="insQuesData" />
+<input type="hidden" name="questionnaireName" value="followup" />
+<input type="hidden" name="studyName" value="KateIC2" />
+<input type="hidden" name="taskNum" value="1" />
+<input type="hidden" name="redirect" value="/EndTask" />
+
+<input type="hidden" name="QuesName" value="agree" />
+<input type="hidden" name="QuesName" value="sona" />
+     
+<table width="664" cellpadding="0" cellspacing="0" border="0">
+  
+  <tr>
+    <td>
+      <table border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td colspan="2"  align="left" >
+            <h1>Psychology Participant Pool ID</h1>
+              <p class="text"><b>Please enter your Psychology Participant Pool ID code in the space below. This code is the one you should have received when you created an account through Sona-System. This code is often five digits. Please make sure to enter the correct ID code at both Session 1 and Session 2 to make sure we give you credit for your participation on Sona-System.</b> </p></td>
+          </tr>
+          </table>
+        </td>
+      </tr>   
+       
+  
+          <table width="656" border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td  align="left" width="200"><span class="text">Enter your Psychology Participant Pool ID.</td>
+            <td  align="left" width="450">&nbsp;&nbsp;&nbsp;          
+<input type="text" name="sona" size="50">
+            </td>
+          </tr>
+         </table>
+       </td>
+     </tr>  
+       <td>
+          <table border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td align="left" width="200"><span class="text">Retype your Psychology Participant Pool ID.</span></td>
+            <td align="left" width="450">&nbsp;&nbsp;&nbsp;  
+<input type="text" name="sona2" size="50">
+            </td>
+          </tr>
+         </table>
+       </td>
+     </tr>  
+<tr><td align="center">
+<div style="visibility:hidden;">
+ <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("Continue");</script></h1>
+</div>
+<INPUT TYPE="button" NAME="fakecontinue" VALUE="Continue" onClick=" if(validate_form())document.FormOne.submit_system.click();"> 
+</td></tr>
+          
+        
+          
+   
+</center>
+</form>
+</body>
+</html>

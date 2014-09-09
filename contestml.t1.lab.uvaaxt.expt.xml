@@ -2,6 +2,7 @@
 	<Definitions>
 		<!-- Core Files -->
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+		<Task id="consent">consent.html</Task>
 		<Task id="rasurvey">rasurvey.html</Task>
 		<Task id="subjnum">subjnum.html</Task>		
 		<Task id="realstart">realstartskip.jsp</Task>
@@ -233,7 +234,8 @@
 		<Map>
 		<Task id="startpage"/>
 		<Task id="rasurvey"/>
-		<Task id="subjnum"/>	
+		<Task id="subjnum"/>
+		<Task id="consent"/>
 		<Task id="serial"/>
 		<Task id="sendemail"/>	
 		<Task id="emailresearcher"/>		
