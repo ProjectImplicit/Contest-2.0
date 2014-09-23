@@ -8,7 +8,7 @@
 		<Task id="demographics">demographics.jsp</Task>	
 		<Task id="lastpage">lastpage.html</Task>
 		<Task id="debriefing">debriefing_t1.jsp</Task>
-		<Task id="serial">serial_t1.html</Task>
+		<Task id="serial">serial_t1sdsu.html</Task>
 		<Task id="sendemail">sendemail_sdsu.jsp</Task>
 		<Task id="emailresearcher">emailresearcher_t1sdsu.jsp</Task>
 

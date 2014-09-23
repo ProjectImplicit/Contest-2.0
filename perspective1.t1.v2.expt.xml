@@ -1,0 +1,74 @@
+<Study id="calvin.perspective1.t1.v2" datagroup="research"> 
+	<Definitions>
+		<!-- Core Files -->
+		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+		<Task id="consent">consent.html</Task>
+		<Task id="realstart">realstartskip.htm</Task>
+		<Task id="lastpage">lastpage.html</Task> 
+		<Task id="racec" file="racec.xml">/common/all/js/iatjs/iattaskj.jsp</Task>
+		<Task id="raced" file="raced.xml">/common/all/js/iatjs/iattaskj.jsp</Task>
+		<Task id="questionnaire">questionnaire.jsp</Task>
+		<Task id="romance">romance.jsp</Task>
+		<Task id="debriefing">debriefing_t1.jsp</Task>
+		<Task id="serial">serial_t1.html</Task>		
+		<Task id="sendemail">sendemail.jsp</Task>
+
+		<!--Contest PT-->
+		<Task id="contestpt">contestpt.htm</Task>		
+		
+		<!--PT-->
+		<Task id="pt1">pt_intro.html</Task>	
+		<Task id="pt2">pt_pick.jsp</Task>	
+		<Task id="pt3">pt_task.html</Task>			
+		<!--PT Control-->
+		<Task id="ptcontrol1">pt_intro.html</Task>	
+		<Task id="ptcontrol2">pt_pick.jsp</Task>		
+		<Task id="ptcontrol3">pt_control.html</Task>		
+		
+		<!-- Instructions -->
+		<Task id="control">control.html</Task>
+		<Task id="instructions">instructions.html</Task>
+	
+	
+	</Definitions>
+	
+	<Map>
+		<Task id="startpage"/>
+		<Task id="consent"/>	
+		<Task id="realstart"/>
+
+		
+		<Branch type ="group" select="1" id="condition">
+			<Branch type="group" id="controlgroup">
+				<Task id="control"/>	
+			</Branch>
+			<Branch type="group" id="contestptgroup">
+				<Task id="contestpt"/>	
+			</Branch>			
+			<Branch type="group" id="ptgroup">
+				<Task id="pt1"/>
+				<Task id="pt2"/>
+				<Task id="pt3"/>				
+			</Branch>
+			<Branch type="group" id="ptcontrolgroup">
+				<Task id="ptcontrol1"/>
+				<Task id="ptcontrol2"/>
+				<Task id="ptcontrol3"/>	
+			</Branch>			
+		</Branch>			
+		
+		<Branch type="group" id="iatpack">
+			<Task id="instructions"/>
+			<Branch type="group" select="1" id="random">
+				<Task id="racec"/>
+				<Task id="raced"/>
+			</Branch>
+		</Branch>	
+		<Task id="questionnaire"/>	
+		<Task id="romance"/>				
+		<Task id="serial"/>
+		<Task id="sendemail"/>
+		<Task id="lastpage"/>	
+		<Task id="debriefing"/>		
+	</Map>
+</Study>
