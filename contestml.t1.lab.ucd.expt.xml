@@ -4,6 +4,8 @@
 		<Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
 		<Task id="rasurvey">rasurvey.html</Task>
 		<Task id="subjnum">subjnum.html</Task>		
+		<Task id="consent">consent_ucd1.html</Task>	
+		<Task id="consent2">consent_ucd2.html</Task>	
 		<Task id="realstart">realstartskip.jsp</Task>
 		<Task id="questionnaire">questionnaire.jsp</Task>
 		<Task id="demographics">demographics.jsp</Task>	
@@ -234,6 +236,8 @@
 		<Task id="startpage"/>
 		<Task id="rasurvey"/>
 		<Task id="subjnum"/>	
+		<Task id="consent"/>
+		<Task id="consent2"/>
 		<Task id="serial"/>
 		<Task id="sendemail"/>	
 		<Task id="emailresearcher"/>		

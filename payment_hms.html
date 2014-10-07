@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+ 
+    <title>Email Address for Payment</title>
+   
+<script language="javascript" type="text/javascript" src="/implicit/common/en-us/js/dynamicoptionlist.js"></script>
+<script language="javascript" type="text/javascript" src="/implicit/common/en-us/js/task.js"></script>
+<script type="text/javascript">
+
+
+function validate_email(str)
+{
+
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		    return false;
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+
+		    return false;
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+
+		    return false;
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    return false;
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    return false;
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    return false;
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    return false;
+		 }
+return true;  //can have code here to check that email format is correct
+}
+function validate_form()
+{
+
+  if(document.FormOne.email_hms.value==null || document.FormOne.email_hms.value=="")
+  {
+   document.FormOne.email_hms.focus();
+  alert("Please enter an email address");
+  return false;
+  }
+  
+  if (validate_email(document.FormOne.email_hms.value)==false)
+  {
+	document.FormOne.email_hms.focus();
+	alert("This is an invalid email address");
+	return false;
+  }
+	
+    if(document.FormOne.email_hms.value!=document.FormOne.email2_hms.value)
+  {
+  document.FormOne.email_hms.focus();
+  alert("The email addresses do not match");
+  return false;
+  }
+  
+  return true;
+}
+</script>
+</head>
+<body  >
+    <center>
+<br />
+<form method="post" name="FormOne" id="FormOne" action="/implicit/Study">
+<input type="hidden" name="mode" value="insQuesData" />
+<input type="hidden" name="questionnaireName" value="followup" />
+<input type="hidden" name="studyName" value="KateIC2" />
+<input type="hidden" name="taskNum" value="1" />
+<input type="hidden" name="redirect" value="/EndTask" />
+
+<input type="hidden" name="QuesName" value="agree" />
+<input type="hidden" name="QuesName" value="email_hms" />
+     
+<table width="664" cellpadding="0" cellspacing="0" border="0">
+  
+  <tr>
+    <td>
+      <table border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td colspan="2"  align="left" >
+            <h1>Email Address for Payment</h1>
+              <p class="text"><b>Please enter the Email Address you would like to receive payment at. This Email Address will be used for administering payment. It will only be available to the research team, and will not be used for any other purpose than to track responses across time and administer payment.</b> </p></td>          </tr>
+          </table>
+        </td>
+      </tr>   
+       
+  
+          <table width="656" border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td  align="left" width="200"><span class="text">Enter your Email Address.</td>
+            <td  align="left" width="450">&nbsp;&nbsp;&nbsp;          
+<input type="text" name="email_hms" size="50">
+            </td>
+          </tr>
+         </table>
+       </td>
+     </tr>  
+       <td>
+          <table border="0" cellpadding="1" cellspacing="1">
+          <tr>
+            <td align="left" width="200"><span class="text">Retype your Email Address.</span></td>
+            <td align="left" width="450">&nbsp;&nbsp;&nbsp;  
+<input type="text" name="email2_hms" size="50">
+            </td>
+          </tr>
+         </table>
+       </td>
+     </tr>  
+<tr><td align="center">
+<div style="visibility:hidden;">
+ <h1 align="center"><script language="JavaScript" type="text/javascript">writeButton("Continue");</script></h1>
+</div>
+<INPUT TYPE="button" NAME="fakecontinue" VALUE="Continue" onClick=" if(validate_form())document.FormOne.submit_system.click();"> 
+</td></tr>
+          
+        
+          
+   
+</center>
+</form>
+</body>
+</html>

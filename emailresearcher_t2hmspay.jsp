@@ -11,11 +11,11 @@
 	 String mailServer = "localhost";
      String Subject = "Participant completed study and is eligible for payment";
 	 String fromEmail = "Calvin Lai <clai@virginia.edu>";
-	 String emailTaskId="serial";
-	 String ParticipantEmail =studySession.v(emailTaskId+".email"); 
+	 String emailTaskId="payment_hms";
+	 String ParticipantEmail =studySession.v(emailTaskId+".email_hms"); 
 	 String toResearcher="Maddalena_Marini@hms.harvard.edu";
 	 long sessionId=studySession.getId();
-	 int delay=1;
+	 int delay=86400000;
 	 String bodyText="A person with the following email address has completed the study and is eligible for payment: "+ParticipantEmail+"";
 
 		 try{

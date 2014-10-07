@@ -994,7 +994,7 @@ function assignformvalues () {
  function makeItem(curitem) {
  
    preclass="medblue";
-   if ((curitem==0)) preclass="medblue2";
+//   if ((curitem==0)) preclass="medblue2";
    
    
    var pctcompleted= Math.round(((curitem+84)/428)*100);

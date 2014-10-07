@@ -122,6 +122,8 @@ a.menlnk:hover
 		about this research and follow the links to the questions of specific interest to you.</p>
 	<p class="text">Thanks again for your participation.</p>
 	<p class="text">If you have any questions about this study please email the lead investigator, Gina Roussos (<a href="mailto:gina.roussos@yale.edu">gina.roussos@yale.edu</a>).</p>
+	<p class="text"><b>Please click the link below to go to the second half of the debriefing.</b></p>
+	<p align="center" class="text"><font size ="4"><b><a href="https://implicit.harvard.edu/implicit/user/calvin/conml/debriefing_t2yaleroussos2.jsp">DEBRIEFING - SECOND HALF</a><b></font></b></p>
 		</td>
 </tr>
 </table>
