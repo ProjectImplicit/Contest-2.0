@@ -27,7 +27,6 @@
 		<Task id="startpage"/>
 		<Task id="t2intro"/>		
 		<Task id="serial"/>
-		<Task id="emailresearcher"/>
 
 		<Branch type="group" select="1" id="random">
 			<Branch type="group" id="5b_iatc_set1_post_group">

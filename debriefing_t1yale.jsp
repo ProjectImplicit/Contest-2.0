@@ -111,7 +111,7 @@ a.menlnk:hover
 <tr><td>
 
 	<p align="center" class="text"><strong>You have completed the first phase of the study! </strong></p>
-    <p class="text">Thank you for completing the first phase of the study! In twenty-four hours, you will be contacted via email complete the second phase of the study. The second phase will take no more than thirty minutes. Please complete it as soon as you can when you receive it. After you have completed that phase, we will give you feedback about your results. So that others are not influenced before they participate, please do not discuss this study with anyone else.<br/><br/>
+    <p class="text">Thank you for completing the first phase of the study! In twenty-four hours, you will be contacted via email to complete the second phase of the study. The second phase will take no more than thirty minutes. Please complete it as soon as you can when you receive it. After you have completed that phase, we will give you feedback about your results. So that others are not influenced before they participate, please do not discuss this study with anyone else.<br/><br/>
 	</p>
  </td>
 </tr>
